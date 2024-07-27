@@ -12,28 +12,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css" />
     <style>
-        .nav-shadow {
-            box-shadow: 0px 2px 0px 0 rgba(0, 0, 0, 0.06), 0 3px 1px 0 rgba(0, 0, 0, 0.01);
-        }
-
         @keyframes appear {
-            from {
-                opacity: 0.5;
-                transform: translateX(-100%);
-            }
+    from {
+        opacity: 0.5;
+        transform: translateY(100%);
+    }
 
-            to {
-                opacity: 1;
-                transform: translateX(0%);
-            }
-        }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 
-        .inner-container {
-            animation: appear linear;
-            animation-timeline: view();
-            animation-range: entry 0 cover 40%;
-            transition: all;
-        }
+.inner-container {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    transition: all;
+}
+
     </style>
 </head>
 
@@ -49,13 +46,14 @@
                                 <img src="../assets/Logo.png" alt="logo" class="w-full" />
                             </a>
                         </div>
+                        
                         <ul>
                             <div class="flex">
                                 <li class="list-none py-7 px-8">
-                                    <a href="/" class="hover:text-[#30C2EC]">Home</a>
+                                    <a href="index.html" class="hover:text-[#30C2EC]">Home</a>
                                 </li>
                                 <li class="list-none py-7 px-8">
-                                    <a href="/" class="hover:text-[#30C2EC]">Courses</a>
+                                    <a href="CoursePage.html" class="hover:text-[#30C2EC]">Courses</a>
                                 </li>
                                 <li class="list-none py-7 px-8">
                                     <a href="/" class="hover:text-[#30C2EC]">Mock&nbsp;Tests</a>
