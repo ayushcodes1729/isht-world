@@ -42,63 +42,59 @@
 </head>
 
 <body id="Home" class="flex flex-col m-0 p-0">
-    <div class="container">
-        <section class="Navbar font-[Poppins] nav-shadow">
+    <div class="container ">
+        <section class="Navbar font-ss nav-shadow z-[1000]">
             <header class="bg-white py-4">
                 <nav class="flex justify-between items-center w-[92%] mx-auto">
                     <div>
                         <a href="index.html">
-                            <img class="w-16 lg:w-32 cursor-pointer" src="../assets/Logo.png" alt="...">
+                            <img class="w-28 lg:w-36 cursor-pointer" src="../assets/Logo.png" alt="...">
                         </a>
                     </div>
                     <div
                         class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
                         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                             <li>
-                                <a class="hover:text-gray-500" href="index.html">Home</a>
+                                <a class="hover:text-[#32c1ec]" href="index.html">Home</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="CoursePage.html">Courses</a>
+                                <a class="hover:text-[#32c1ec]" href="CoursePage.html">Courses</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="MockTestPage.html">Mock Test</a>
+                                <a class="hover:text-[#32c1ec]" href="MockTestPage.html">Mock Test</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="EbooksPage.html">Ebooks</a>
+                                <a class="hover:text-[#32c1ec]" href="EbooksPage.html">Ebooks</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="ContactPage.html">Contact Us</a>
+                                <a class="hover:text-[#32c1ec]" href="ContactPage.html">Contact Us</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="AboutUs.html">About Us</a>
+                                <a class="hover:text-[#32c1ec]" href="AboutUs.html">About Us</a>
                             </li>
                             <li>
-                                <a class="hover:text-gray-500" href="GalleryPage.html">Gallery</a>
+                                <a class="hover:text-[#32c1ec]" href="GalleryPage.html">Gallery</a>
                             </li>
                         </ul>
                     </div>
                     <div class="flex items-center gap-6">
                         <a href="LoginPage.html">
-                            <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
-                            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+                            <button class="bg-[#32c1ec] text-white px-5 py-2 rounded-full hover:bg-[#000000]">Sign in</button>
                         </a>
+                        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
                     </div>
             </header>
         
         </section>
         <!-- Hero Section  -->
-        <section id="hero" class="my-16 mx-12 md:mx-0">
-            <div class=" hero flex md:flex-row flex-col md:w-[100dvw] md:flex-nowrap justify-between  lg:justify-center items-center">
+        <section id="hero" class="  md:mx-0">
+            <div class=" hero flex md:flex-row flex-col md:w-full md:flex-nowrap justify-between  lg:justify-center items-center">
                 <div class="hero-text w-[100dvw] md:w-[55dvw] lg:w-[50dvw] py-9 flex flex-col items-center  lg:items-baseline">
                     <span class="font-bold leading-normal text-3xl md:text-3xl lg:text-6xl text-center md:text-left font-ss">Upgrade Your Skills with Isht World</span>
                     <p class="text-lg text-gray-500 py-4 mx-4">Welcome to Learngo, your online destination for high-quality
                         education and professional development.</p>
                     <div class="search-bar border rounded-full border-gray-200 flex items-center md:my-4 lg:mx-0 scale-75 md:scale-100">
-                        <span class="material-symbols-outlined text-[#30C2EC] py-5 md:px-3 text-sm">
-                            search
-                        </span>
-                        <input type="text" class="py-2 border-r text-sm w-fit md:w-24"
-                            placeholder="Search Courses Here">
+                        
                         <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#30C2EC"
                             class="m-3 text-[#30C2EC]">
@@ -132,7 +128,7 @@
                             <option value="Self Development">Self Development</option>
                         </select>
                         <button
-                            class="flex items-center bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 px-2 py-1 cursor-pointer font-semibold tracking-widest rounded-full hover:bg-[#7be2ff] duration-300 hover:gap-2 hover:translate-x-3">
+                            class="flex items-center bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 px-2 py-1 cursor-pointer font-semibold tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
                             Find Course
                             <svg class="md:w-5 md:h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,21 +146,17 @@
             </div>
         </section>
         <!-- Learning Experience Section  -->
-        <section id="learning-exp" class="bg-[#f4fcfe] flex w-[100dvw]">
-            <div class="inner-container flex flex-wrap lg:flex-nowrap mx-14">
-                <div class="xp-container flex lg:py-32 md:py-10">
+        <section id="learning-exp" class="bg-[#f4fcfe] w-full flex px-14">
+            <div class="inner-container flex flex-wrap lg:flex-nowrap ">
+                <div class="xp-container flex lg:items-center pt-10   md:py-10">
                     <div class="lg:w-[45dvw] w-full lg:m-6">
                         <img src="../assets/learning xp.png" alt="">
                     </div>
                 </div>
-                <div class="hero-text lg:w-[45dvw] w-full  py-24">
+                <div class="hero-text lg:w-[45dvw] w-full py-8  md:py-16">
                     <span class="font-bold leading-tight text-2xl md:text-5xl font-ss">Transform Your<br>Learning Experience<br>With
                         Us</span>
-                    <p class="text-base text-gray-500 py-4">Lorem Ipsum is simply dummy text of the printing and
-                        typesetting
-                        lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer
-                        took a
-                        galley of type and dummy text Ipsum has.</p>
+                    <p class="text-base text-gray-500 py-4">Unlock your potential and transform your learning journey with us, where knowledge meets inspiration for a brighter future.</p>
 
                     <!-- Benifits list  -->
                     <div class="benifits my-8 flex">
@@ -215,21 +207,23 @@
             </div>
         </section>
         <!-- Featured Courses  -->
-        <section class="feat-courses lg:mx-12">
+        <section class="feat-courses lg:px-12">
             <div class="inner-container">
-                <div class="hero-text p-9 w-full flex justify-between">
+                <div class="hero-text px-9 pt-9 pb-0 flex justify-between">
                     <span class="font-bold leading-normal text-xl md:text-3xl lg:text-5xl font-ss">Featured Courses</span>
                     <button
-                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-4  cursor-pointer font-semibold tracking-widest rounded-full hover:bg-[#7be2ff] duration-300 hover:gap-2 hover:translate-x-3">
-                        Search All Courses
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-2 md:px-4  cursor-pointer font-semibold text-sm md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
+                        <a href="CoursePage.html">
+                            Search All Courses
+                        </a>
                     </button>
                 </div>
                 <!-- Card Slider -->
                 <div class="slide-container swiper">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -280,8 +274,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -332,8 +326,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -384,8 +378,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -436,8 +430,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -488,8 +482,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
-                                <div class="image-content w-fit">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
+                                <div class="image-content hover:scale-105 w-full transition-all">
                                     <div class="card-image overflow-hidden  w-full">
                                         <img src="../assets/course-image.jpg" alt=""
                                             class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -553,68 +547,68 @@
             </div>
         </section>
         <!-- Footfall  -->
-        <section class="footfall w-[100dvw]" style="background:url(../assets/footbg\ 1.png) no-repeat center center/cover; ">
-            <div class="inner-container content m-14 flex flex-wrap justify-center md:justify-between lg:justify-normal">
+        <section class="footfall " style="background:url(../assets/footbg\ 1.png) no-repeat center center/cover; ">
+            <div class="inner-container content px-14 py-5 flex flex-wrap justify-center md:justify-between lg:justify-normal">
                 <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
                     <div class="foot-img rounded-full bg-white w-fit">
                         <img src="../assets/foot1.png" alt="" class="w-24">
                     </div>
-                    <span class="text-2xl font-semibold text-white">500+</span>
+                    <span class="text-3xl font-semibold text-white my-3">500+</span>
                     <span class="foot-name text-lg text-white">Satisfied Students</span>
                 </div>
                 <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
                     <div class="foot-img rounded-full bg-white w-fit">
                         <img src="../assets/foot2.png" alt="" class="w-24">
                     </div>
-                    <span class="text-2xl font-semibold text-white">300+</span>
+                    <span class="text-3xl font-semibold text-white my-3">300+</span>
                     <span class="foot-name text-lg text-white">Online Courses</span>
                 </div>
                 <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
                     <div class="foot-img rounded-full bg-white w-fit">
                         <img src="../assets/foot3.png" alt="" class="w-24">
                     </div>
-                    <span class="text-2xl font-semibold text-white">240+</span>
+                    <span class="text-3xl font-semibold text-white my-3">240+</span>
                     <span class="foot-name text-lg text-white">Online Courses</span>
                 </div>
                 <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
                     <div class="foot-img rounded-full bg-white w-fit">
                         <img src="../assets/foot4.png" alt="" class="w-24">
                     </div>
-                    <span class="text-2xl font-semibold text-white">100%</span>
+                    <span class="text-3xl font-semibold text-white my-3">100%</span>
                     <span class="foot-name text-lg text-white">Secured & Trusted Place</span>
                 </div>
             </div>
         </section>
         <!-- Latest Courses  -->
-        <section class="latest-courses lg:mx-14">
+        <section class="latest-courses lg:px-14">
             <div class="inner-container flex flex-col items-center">
                 <span class="font-bold leading-normal text-3xl lg:text-5xl font-ss py-10 ">Our Latest Courses</span>
                 <!-- Course Filters  -->
                 <div class="filters">
                     <ul class="flex flex-wrap">
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">All</a>
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">All</a>
                         </li>
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">Web
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">Web
                                 Design</a></li>
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">Web
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">Web
                                 Development</a></li>
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">Digital
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">Digital
                                 Marketting</a></li>
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">Self
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">Self
                                 Development</a></li>
                         <li class="my-3"><a href=""
-                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] transition-all duration-300">Graphics
+                                class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">Graphics
                                 Design</a></li>
                     </ul>
                 </div>
                 <div class="courses flex flex-wrap justify-center">
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -663,8 +657,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -713,8 +707,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -763,8 +757,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -813,8 +807,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -863,8 +857,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -913,8 +907,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -963,8 +957,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -1013,8 +1007,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -1063,8 +1057,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -1113,8 +1107,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -1163,8 +1157,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border nav-shadow rounded-xl m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
-                        <div class="image-content w-fit">
+                    <div class="card border nav-shadow overflow-hidden m-5 sm:w-[60%] md:w-[42%] lg:w-[21%]">
+                        <div class="image-content hover:scale-105 w-full transition-all">
                             <div class="card-image overflow-hidden  w-full">
                                 <img src="../assets/course-image.jpg" alt=""
                                     class="card-img bg-cover w-full h-full object-cover hover:scale-110 transition-transform duration-300">
@@ -1214,36 +1208,42 @@
                         </div>
                     </div>
                 </div>
+                <button
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-2 md:px-4 py-4 cursor-pointer font-semibold text-sm md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
+                        <a href="CoursePage.html">
+                            View More
+                        </a>
+                    </button>
             </div>
         </section>
         <!-- Instructors  -->
-        <section class="instructors flex flex-col justify-center py-10 w-[100dvw] "
+        <section class="instructors flex flex-col justify-center my-10 pb-10 relative"
             style="background: url(../assets/dotted_bg.jpg) no-repeat center center/cover;">
             <div class="inner-container flex flex-col justify-center">
                 <span class="font-bold leading-normal text-3xl lg:text-5xl font-ss py-10 text-center">Meet Our Expert
                     <br>Instructors</span>
-                <div class="instructors mx-14 flex flex-wrap lg:flex-nowrap justify-center items-center">
-                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-44 px-24 flex justify-center overflow-hidden"
+                <div class="instructors mx-14 flex flex-wrap lg:flex-nowrap justify-center items-center ">
+                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-52 rounded-xl px-36 flex justify-center  overflow-hidden"
                         style="background: url(../assets/Instruct-1.jpg) no-repeat center center/cover;">
                         <div
                             class="instructor-name flex flex-col items-center bg-white py-10  w-60 h-72 rounded-[50%] bottom-0 absolute translate-y-[60%]  ">
-                            <span class="text-lg font-semibold">Jack Oram</span>
+                            <span class="text-lg md:text-xl py-2 font-semibold">Jack Oram</span>
                             <span class="text-sm text-[#30C2EC] font-medium">UI/UX Designer, Profilex</span>
                         </div>
                     </div>
-                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-44 px-24 flex justify-center overflow-hidden"
+                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-52 rounded-xl px-36 flex justify-center  overflow-hidden"
                         style="background: url(../assets/Instruct-1.jpg) no-repeat center center/cover;">
                         <div
                             class="instructor-name flex flex-col items-center bg-white py-10  w-60 h-72 rounded-[50%] bottom-0 absolute translate-y-[60%]  ">
-                            <span class="text-lg font-semibold">Jack Oram</span>
+                            <span class="text-lg md:text-xl py-2 font-semibold">Jack Oram</span>
                             <span class="text-sm text-[#30C2EC] font-medium">UI/UX Designer, Profilex</span>
                         </div>
                     </div>
-                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-44 px-24 flex justify-center overflow-hidden"
+                    <div class="instructor-cards w-full md:w-[30%] m-4 md:m-8 relative py-52 rounded-xl px-36 flex justify-center  overflow-hidden"
                         style="background: url(../assets/Instruct-1.jpg) no-repeat center center/cover;">
                         <div
                             class="instructor-name flex flex-col items-center bg-white py-10  w-60 h-72 rounded-[50%] bottom-0 absolute translate-y-[60%]  ">
-                            <span class="text-lg font-semibold">Jack Oram</span>
+                            <span class="text-lg md:text-xl py-2 font-semibold">Jack Oram</span>
                             <span class="text-sm text-[#30C2EC] font-medium">UI/UX Designer, Profilex</span>
                         </div>
                     </div>
@@ -1253,7 +1253,7 @@
         </section>
         <!-- Features -->
         <section class="features">
-            <div class="inner-container flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap lg:my-14 my-6">
+            <div class="inner-container flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap lg:my-5 my-5">
                 <span class="font-bold leading-snug text-2xl md:text-5xl font-ss  lg:hidden ">Which Features We Provide For You</span>
                 <div class="feat-video mx-12 my-14 md:my-32">
                     <div class="features-thumb relative py-16 px-[6.25rem] md:py-48 md:px-80 flex justify-center overflow-hidden rounded-2xl"
@@ -1270,36 +1270,30 @@
                 <div class="features-cards">
                     <span class="font-bold leading-snug text-5xl font-ss py-10 hidden lg:block">Which Features<br>We Provide
                         For<br>You</span>
-                    <div class="feat-cards flex flex-wrap">
+                    <div class="feat-cards flex flex-wrap justify-center">
                         <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
                                 <img src="../assets/lesson-builder.png" alt="">
                             </div>
-                            <span class="feat-name text-base font-bold ">Lesson Builder</span>
+                            <span class="feat-name text-base font-bold ">Mock Test</span>
                         </div>
                         <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
-                                <img src="../assets/payment.png" alt="payment">
+                                <img src="../assets/course.png" alt="payment">
+                            </div>
+                            <span class="feat-name text-base font-bold ">Courses</span>
+                        </div>
+                        <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
+                            <div class="feat-img my-4">
+                                <img src="../assets/payment.png" alt="enrollment">
                             </div>
                             <span class="feat-name text-base font-bold ">Payment</span>
                         </div>
                         <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
-                                <img src="../assets/enrollment.png" alt="enrollment">
+                                <img src="../assets/enrollment.png" alt="course">
                             </div>
                             <span class="feat-name text-base font-bold ">Enrollment</span>
-                        </div>
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
-                            <div class="feat-img my-4">
-                                <img src="../assets/course.png" alt="course">
-                            </div>
-                            <span class="feat-name text-base font-bold ">Course</span>
-                        </div>
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:40 p-4 flex flex-col justify-center items-center m-4">
-                            <div class="feat-img my-4">
-                                <img src="../assets/mock-test.png" alt="test">
-                            </div>
-                            <span class="feat-name text-base font-bold ">Mock Test</span>
                         </div>
                     </div>
                 </div>
@@ -1308,15 +1302,15 @@
         <!-- Testimonials -->
         <section class="testimonials mx-14 hidden lg:block">
             <div class="inner-container relative overflow-hidden flex ">
-                <div class="testimonials-content w-1/2 py-14 pr-4 bg-white">
-                    <span class="font-bold leading-normal text-5xl font-ss py-10">What Students<br>Say About<br>Our
+                <div class="testimonials-content w-[60%] py-14 pr-20 bg-white">
+                    <span class="font-bold leading-tight text-5xl font-ss py-10">What Students<br>Say About<br>Our
                         Course</span>
                     <div class="slide-container swiper">
                         <div class="slide-content-testimonials">
                             <div class="card-wrapper swiper-wrapper">
-                                <div class="card swiper-slide border nav-shadow rounded-xl">
+                                <div class="card swiper-slide border nav-shadow overflow-hidden">
                                     <div class="card-content">
-                                        <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
+                                        <p class="testimonials text-gray-500  text-lg font-normal hover:text-[#32c1eb]  transition-all">Lorem
                                             ipsum
                                             dolor sit, amet consectetur adipisicing elit. Tempore ipsa autem possimus
                                             odio
@@ -1334,9 +1328,9 @@
 
                                     </div>
                                 </div>
-                                <div class="card swiper-slide border nav-shadow rounded-xl">
+                                <div class="card swiper-slide border nav-shadow overflow-hidden">
                                     <div class="card-content">
-                                        <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
+                                        <p class="testimonials text-gray-500  text-lg font-normal hover:text-[#32c1eb]  transition-all">Lorem
                                             ipsum
                                             dolor sit, amet consectetur adipisicing elit. Tempore ipsa autem possimus
                                             odio
@@ -1354,9 +1348,9 @@
 
                                     </div>
                                 </div>
-                                <div class="card swiper-slide border nav-shadow rounded-xl">
+                                <div class="card swiper-slide border nav-shadow overflow-hidden">
                                     <div class="card-content">
-                                        <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
+                                        <p class="testimonials text-gray-500  text-lg font-normal hover:text-[#32c1eb]  transition-all">Lorem
                                             ipsum
                                             dolor sit, amet consectetur adipisicing elit. Tempore ipsa autem possimus
                                             odio
@@ -1387,7 +1381,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="testimonials-img h-full py-14 absolute translate-x-[40%] -z-[1]">
+                <div class="testimonials-img  h-full py-14 absolute translate-x-[60%] -z-[1] justify-center md:justify-normal">
                     <img src="../assets/testimonials.png" alt="" class=" h-full">
                 </div>
                 
@@ -1403,7 +1397,7 @@
                 <div class="slide-container swiper px-10">
                     <div class="slide-content-testimonials">
                         <div class="card-wrapper swiper-wrapper">
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
                                 <div class="card-content">
                                     <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
                                         ipsum
@@ -1423,7 +1417,7 @@
 
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
                                 <div class="card-content">
                                     <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
                                         ipsum
@@ -1443,7 +1437,7 @@
 
                                 </div>
                             </div>
-                            <div class="card swiper-slide border nav-shadow rounded-xl">
+                            <div class="card swiper-slide border nav-shadow overflow-hidden">
                                 <div class="card-content">
                                     <p class="title  text-lg font-bold hover:text-[#32c1eb]  transition-all">Lorem
                                         ipsum
@@ -1584,8 +1578,8 @@
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
 <!-- JavaScript -->
-<!--Uncomment this line-->
 <script>
+    // Script for navbar
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e){
         e.name = e.name === 'menu' ? 'close' : 'menu'
