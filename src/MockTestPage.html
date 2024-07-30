@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <div
-                    class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                    class="nav-links  md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-0 md:top-[-100%] md:w-auto  w-full flex items-center px-5 md:translate-y-0 -translate-y-full transition-transform duration-500 pt-8 md:pt-0">
                     <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                         <li>
                             <a class="hover:text-[#32c1ec]" href="index.html">Home</a>
@@ -636,7 +636,7 @@
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e){
         e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[9%]')
+        navLinks.classList.toggle('translate-y-0')
     }
 </script>
 <script src="script3.js"></script>
