@@ -149,21 +149,6 @@
     animation-fill-mode: forwards;
 }
 
-@media (width >=1024px) {
-    .container .features {
-        flex-wrap: nowrap;
-    }
-    .container .features .inner-container {
-        justify-content: start;
-    }
-    .container .features .inner-container .small-head{
-        display: none;
-    }
-    .container .features .inner-container .features-cards .big-head{
-        display: block;
-    }
-}
-
 @keyframes borderAnimate {
     0% {
         transform: rotate(0);
