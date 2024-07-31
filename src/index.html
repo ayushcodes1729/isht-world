@@ -15,29 +15,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="output.css" />
     <style>
-        /* @keyframes appear {
-    from {
-        opacity: 0.5;
-        transform: translateX(-100%);
-    }
+        .filled-circle {
+            animation: traverse 5s linear infinite;
+        }
+        .symbol {
+            animation: to-fro 5s linear infinite;
+        }
+        .hollow-circle {
+            animation: circular 5s linear infinite;
+        }
+        .hollow-square {
+            animation: rotate 10s linear infinite;
+        }
+        .filled-square {
+            animation: rotate 10s linear infinite;
+        }
 
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-.inner-container {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    transition: all;
-} */
-
+        @keyframes traverse {
+            0%{
+                transform: translateY(0) translateX(0);
+            }
+            30%{
+                transform: translateY(-20px) translateX(20px);
+            }
+            60%{
+                transform: translateY(0) translateX(50px);
+            }
+            100%{
+                transform: translateY(0) translateX(0);
+            }
+        }
+        @keyframes circular {
+            0%{
+                transform: translateY(0) translateX(0);
+            }
+            25%{
+                transform: translateY(-10px) translateX(20px);
+            }
+            50%{
+                transform: translateY(0) translateX(40px);
+            }
+            75%{
+                transform: translateY(10px) translateX(20px);
+            }
+            100%{
+                transform: translateY(0) translateX(0);
+            }
+        }
+        @keyframes to-fro {
+            0%{
+                transform: translateY(0) translateX(0);
+            }
+            25%{
+                transform: translateY(-2px) translateX(-10px);
+            }
+            50%{
+                transform: translateY(0) translateX(10px);
+            }
+            75%{
+                transform: translateY(0) translateX(-10px);
+            }
+            100%{
+                transform: translateY(0) translateX(0);
+            }
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -48,38 +102,38 @@
                 <nav class="flex justify-between items-center w-[92%] mx-auto">
                     <div>
                         <a href="index.html">
-                            <img class="w-28 lg:w-36 cursor-pointer" src="../assets/Logo.png" alt="...">
+                            <img class="w-28 md:w-36 cursor-pointer" src="../assets/Logo.png" alt="...">
                         </a>
                     </div>
                     <div
                         class="nav-links  md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-0 md:top-[-100%] md:w-auto  w-full flex items-center px-5 md:translate-y-0 -translate-y-full transition-transform duration-500 pt-8 md:pt-0">
                         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="index.html">Home</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base " href="index.html">Home</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="CoursePage.html">Courses</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="CoursePage.html">Courses</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="MockTestPage.html">Mock Test</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="MockTestPage.html">Mock Test</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="EbooksPage.html">Ebooks</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="EbooksPage.html">Ebooks</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="ContactPage.html">Contact Us</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="ContactPage.html">Contact Us</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="AboutUs.html">About Us</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="AboutUs.html">About Us</a>
                             </li>
                             <li>
-                                <a class="hover:text-[#32c1ec]" href="GalleryPage.html">Gallery</a>
+                                <a class="hover:text-[#32c1ec] text-sm lg:text-base" href="GalleryPage.html">Gallery</a>
                             </li>
                         </ul>
                     </div>
                     <div class="flex items-center gap-6">
                         <a href="LoginPage.html">
-                            <button class="bg-[#32c1ec] text-white px-5 py-2 rounded-full hover:bg-[#000000]">Sign in</button>
+                            <button class="bg-[#32c1ec] text-white px-5 py-2 lg:px-5 lg:py-2 rounded-full text-xs lg:text-base hover:bg-[#000000]">Sign&nbsp;in</button>
                         </a>
                         <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
                     </div>
@@ -87,8 +141,17 @@
         
         </section>
         <!-- Hero Section  -->
-        <section id="hero" class="py-20  md:mx-0">
-            <div class=" hero flex md:flex-row flex-col md:w-full md:flex-nowrap justify-between  lg:justify-center items-center">
+        <section id="hero" class=" relative py-20 md:mx-0">
+            <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[17%] left-[6%] "></div>
+            <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%] lg:block hidden "></div>
+            <div class="absolute filled-square w-6 h-6  bg-green-300 -z-[1] top-[40%] left-[20%] lg:block hidden"></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[67%] left-[35%]">+</div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[80%] left-[52%]">=</div>
+            <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-green-300 -z-[1] top-[58%] left-[61%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
+            <!-- <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[87%]"></div> -->
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div>
+            <div data-aos="fade-up" class="inner-container z-10 hero flex md:flex-row flex-col md:w-full md:flex-nowrap justify-between  lg:justify-center items-center">
                 <div class="hero-text w-[100dvw] md:w-[55dvw] lg:w-[50dvw] py-9 flex flex-col items-center  lg:items-baseline">
                     <span class="font-bold leading-normal text-3xl md:text-3xl lg:text-6xl text-center md:text-left font-ss">Upgrade Your Skills with Isht World</span>
                     <p class="text-lg text-gray-500 py-4 mx-4">Welcome to Learngo, your online destination for high-quality
@@ -147,7 +210,8 @@
         </section>
         <!-- Learning Experience Section  -->
         <section id="learning-exp" class="bg-[#f4fcfe] w-full flex px-14">
-            <div class="inner-container flex flex-wrap lg:flex-nowrap ">
+            
+            <div data-aos="fade-up" class="inner-container flex flex-wrap lg:flex-nowrap ">
                 <div class="xp-container flex lg:items-center pt-10   md:py-10">
                     <div class="lg:w-[45dvw] w-full lg:m-6">
                         <img src="../assets/learning xp.png" alt="">
@@ -207,8 +271,17 @@
             </div>
         </section>
         <!-- Featured Courses  -->
-        <section class="feat-courses lg:px-12">
-            <div class="inner-container">
+        <section class="feat-courses relative lg:px-12">
+            <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[17%] left-[6%] "></div>
+            <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
+            <div class="absolute filled-square w-6 h-6  bg-green-300 -z-[1] top-[40%] left-[20%] lg:block hidden"></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[67%] left-[35%]">+</div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[90%] left-[52%]">=</div>
+            <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-green-300 -z-[1] top-[58%] left-[61%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[87%]"></div>
+            <!-- <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div> -->
+            <div data-aos="fade-up" class="inner-container z-10">
                 <div class="hero-text px-9 pt-9 pb-0 flex justify-between">
                     <span class="font-bold leading-normal text-xl md:text-3xl lg:text-5xl font-ss">Featured Courses</span>
                     <button
@@ -548,7 +621,7 @@
         </section>
         <!-- Footfall  -->
         <section class="footfall " style="background:url(../assets/footbg\ 1.png) no-repeat center center/cover; ">
-            <div class="inner-container content px-14 py-5 flex flex-wrap justify-center md:justify-between lg:justify-normal">
+            <div data-aos="fade-up" class="inner-container content px-14 py-5 flex flex-wrap justify-center md:justify-between lg:justify-normal">
                 <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
                     <div class="foot-img rounded-full bg-white w-fit">
                         <img src="../assets/foot1.png" alt="" class="w-24">
@@ -580,8 +653,21 @@
             </div>
         </section>
         <!-- Latest Courses  -->
-        <section class="latest-courses lg:px-14">
-            <div class="inner-container flex flex-col items-center">
+        <section class="latest-courses relative lg:px-14">
+            <!-- Bg Animation -->
+            <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[17%] left-[6%] "></div>
+            <!-- <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div> -->
+            <div class="absolute filled-square w-6 h-6  bg-green-300 -z-[1] top-[40%] left-[20%] lg:block hidden"></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[67%] left-[35%]">+</div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[7%] left-[20%]">^</div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-gray-600 -z-[1] top-[77%] left-[93%]">></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[93%] left-[52%]">=</div>
+            <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-green-300 -z-[1] top-[58%] left-[68%]"></div>
+            <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-purple-400 -z-[1] top-[95%] left-[5%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[90%]"></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div>
+            <div data-aos="fade-up" class="inner-container flex flex-col items-center">
                 <span class="font-bold leading-normal text-3xl lg:text-5xl font-ss py-10 ">Our Latest Courses</span>
                 <!-- Course Filters  -->
                 <div class="filters">
@@ -1219,7 +1305,7 @@
         <!-- Instructors  -->
         <section class="instructors flex flex-col justify-center my-10 pb-10 relative"
             style="background: url(../assets/dotted_bg.jpg) no-repeat center center/cover;">
-            <div class="inner-container flex flex-col justify-center">
+            <div data-aos="fade-up" class="inner-container flex flex-col justify-center">
                 <span class="font-bold leading-normal text-3xl lg:text-5xl font-ss py-10 text-center">Meet Our Expert
                     <br>Instructors</span>
                 <div class="instructors mx-14 flex flex-wrap lg:flex-nowrap justify-center items-center ">
@@ -1252,8 +1338,18 @@
             </div>
         </section>
         <!-- Features -->
-        <section class="features">
-            <div class="inner-container flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap lg:my-5 my-5">
+        <section class="features relative">
+            <!-- Bg Animation -->
+            <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[17%] left-[6%] "></div>
+            <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
+            <div class="absolute filled-square w-6 h-6  bg-purple-400 -z-[1] top-[65%] left-[82%]"></div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[87%] left-[5%]">+</div>
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[80%] left-[52%]">=</div>
+            <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-green-300 -z-[1] top-[58%] left-[61%]"></div>
+            <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
+            <!-- <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[87%]"></div> -->
+            <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div>
+            <div data-aos="fade-up" class="inner-container flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap lg:my-5 my-5">
                 <span class="font-bold leading-snug text-2xl md:text-5xl font-ss  lg:hidden ">Which Features We Provide For You</span>
                 <div class="feat-video mx-12 my-14 md:my-32">
                     <div class="features-thumb relative py-16 px-[6.25rem] md:py-48 md:px-80 flex justify-center overflow-hidden rounded-2xl"
@@ -1300,8 +1396,9 @@
             </div>
         </section>
         <!-- Testimonials -->
-        <section class="testimonials mx-14 hidden lg:block">
-            <div class="inner-container relative overflow-hidden flex ">
+        <section class="testimonials mx-14 hidden lg:block relative">
+            
+            <div data-aos="fade-up" class="inner-container relative overflow-hidden flex ">
                 <div class="testimonials-content w-[60%] py-14 pr-20 bg-white">
                     <span class="font-bold leading-tight text-5xl font-ss py-10">What Students<br>Say About<br>Our
                         Course</span>
@@ -1388,7 +1485,7 @@
             </div>
         </section>
         <!-- Testimonials small -->
-        <section class="testimonials-small flex flex-col lg:hidden ">
+        <section data-aos="fade-up" class="testimonials-small flex flex-col lg:hidden ">
             <span class="font-bold leading-normal text-3xl md:text-5xl font-ss pt-10 ">What Students Say About Our
                 Course</span>
                 <div class="testimonials-img h-full py-14  -z-[1]">
@@ -1472,7 +1569,7 @@
         </section>
         <!-- Footer  -->
         <section class="footer bg-[#f4fcfe] ">
-            <div class="inner-container">
+            <div data-aos="fade-up" class="inner-container">
                 <div class="footer-content py-20 mx-14 flex flex-wrap lg:flex-wrap border-b">
                     <div class="logo-content lg:w-[30%] ">
                         <div class="logo">
@@ -1585,6 +1682,10 @@
         e.name = e.name === 'menu' ? 'close' : 'menu'
         navLinks.classList.toggle('translate-y-0')
     }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 <script src="script.js"></script>
 <script src="script2.js"></script>
