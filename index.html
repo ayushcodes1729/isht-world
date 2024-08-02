@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Isht World</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
@@ -153,13 +153,16 @@
             <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
             <!-- <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[87%]"></div> -->
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div>
-            <div data-aos="fade-up" data-aos-once="true" class="inner-container z-10 hero flex md:flex-row flex-col md:w-full md:flex-nowrap justify-between  lg:justify-center items-center">
-                <div class="hero-text w-[100dvw] md:w-[55dvw] lg:w-[50dvw] py-9 flex flex-col items-center  lg:items-baseline">
-                    <span class="font-bold leading-normal text-3xl md:text-3xl lg:text-7xl text-center md:text-left font-ss">Upgrade Your Skills with Isht World</span>
+
+            <div data-aos="fade-up" data-aos-once="true" class="inner-container z-10 hero flex flex-wrap md:flex-row flex-col md:w-full lg:flex-nowrap justify-between  lg:justify-center items-center">
+                <div class="hero-text w-[90dvw] relative sm:justify-normal md:w-[90dvw] sm:mx-5 md:mx-0 lg:w-[50dvw] py-9 flex flex-col  items-baseline">
+                    <span class="font-bold leading-normal text-4xl md:text-5xl lg:text-7xl md:text-left font-ss">Upgrade Your Skills with Isht World</span>
                     <p class="text-lg text-gray-500 py-4 mx-4">Welcome to Learngo, your online destination for high-quality
                         education and professional development.</p>
-                    <div class="search-bar border rounded-full border-gray-200 flex items-center md:my-4 lg:mx-0 gap-6 scale-75 md:scale-100">
-                        <div class="selection flex">
+                    <!-- Big Searchbar -->
+                    <div class="search-bar border rounded-full hidden border-gray-200 sm:flex items-center md:my-4 lg:mx-0 gap-6">
+                        
+                        <div class="selection flex p-3">
                             <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#30C2EC"
                                 class="m-3 text-[#30C2EC]">
@@ -194,7 +197,7 @@
                             </select>
                         </div>
                         <button
-                            class="flex items-center bg-[#30c2ec] text-white gap-2 md:px-4 md:py-4 px-2 py-1 cursor-pointer font-semibold tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
+                            class="flex items-center bg-[#30c2ec] text-white gap-2 md:p-6 px-2 py-1 cursor-pointer font-semibold tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
                             Find Course
                             <svg class="md:w-5 md:h-5" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,14 +208,61 @@
                         </button>
 
                     </div>
+                    <!-- Small Searchbar -->
+                    <div class="search-bar block sm:hidden w-[90dvw]">
+                        <div class="selection flex border w-[90dvw] py-1">
+                            <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#30C2EC"
+                                class="m-3 text-[#30C2EC]">
+    
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+    
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+    
+                                <g id="SVGRepo_iconCarrier">
+                                    <title>microsoft [#150]</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <defs> </defs>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -7519.000000)"
+                                            fill="#30C2EC">
+                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                <path
+                                                    d="M174,7379 L184,7379 L184,7370 L174,7370 L174,7379 Z M164,7379 L173,7379 L173,7370 L164,7370 L164,7379 Z M174,7369 L184,7369 L184,7359 L174,7359 L174,7369 Z M164,7369 L173,7369 L173,7359 L164,7359 L164,7369 Z"
+                                                    id="microsoft-[#150]"> </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <label for="cars" class="text-sm"></label>
+                            <select name="cars" id="cars" class="outline-none text-sm m-0">
+                                <option value="" disabled selected>Select a category</option>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Digital Marketting">Digital Marketting</option>
+                                <option value="Self Development">Self Development</option>
+                            </select>
+                        </div>
+                        <button
+                            class="flex items-center bg-[#30c2ec] text-white gap-2 sm:p-6 py-2 my-4 text-sm sm:text-base cursor-pointer text-center justify-center tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 w-[90dvw]">
+                            Find Course
+                            <svg class="md:w-5 md:h-5 w-6 h-6" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                                    stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class=" md:w-[40dvw] my-6 flex items-center">
+                <div class=" lg:w-[40dvw] md:w-[100dvw] my-6 md:px-8 flex md:mx-0 sm:mx-10 items-center">
                     <img src="../assets/hero.png" alt="">
                 </div>
             </div>
         </section>
         <!-- Learning Experience Section  -->
-        <section id="learning-exp" class="bg-[#f4fcfe] w-full flex px-14">
+        <section id="learning-exp" class="bg-[#f4fcfe] w-full flex px-4 sm:px-14">
             
             <div data-aos="fade-up" data-aos-once="true" class="inner-container flex flex-wrap lg:flex-nowrap ">
                 <div class="xp-container flex lg:items-center pt-10   md:py-10">
@@ -276,7 +326,7 @@
         <!-- Featured Courses  -->
         <section class="feat-courses relative lg:px-12">
             <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[20%] left-[6%] "></div>
-            <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
+            <div class="absolute hollow-square lg:block hidden w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
             <div class="absolute filled-square w-6 h-6  bg-green-300 -z-[1] top-[40%] left-[20%] lg:block hidden"></div>
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[67%] left-[35%]">+</div>
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[90%] left-[52%]">=</div>
@@ -285,17 +335,17 @@
             <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[23%] left-[87%]"></div>
             <!-- <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div> -->
             <div data-aos="fade-up" data-aos-once="true" class="inner-container z-10 ">
-                <div class="hero-text px-9 pt-20 pb-0 flex justify-between">
-                    <span class="font-bold leading-normal text-xl md:text-3xl lg:text-5xl font-ss">Featured Courses</span>
+                <div class="hero-text px-4 md:px-9 pt-20 pb-0 flex flex-wrap justify-between">
+                    <span class="font-bold leading-normal text-3xl md:text-5xl lg:text-5xl font-ss">Featured Courses</span>
                     <button
-                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-2 md:px-4  cursor-pointer font-semibold text-sm md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 md:hover:translate-x-3">
                         <a href="CoursePage.html">
-                            Search All Courses
+                            See All Courses
                         </a>
                     </button>
                 </div>
                 <!-- Card Slider -->
-                <div class="slide-container swiper">
+                <div class="slide-container swiper px-4">
                     <div class="slide-content">
                         <div class="card-wrapper swiper-wrapper">
                             <div class="card flex flex-col swiper-slide border shadow-sm hover:shadow-lg overflow-hidden transition-all duration-500">
@@ -623,31 +673,31 @@
             </div>
         </section>
         <!-- Footfall  -->
-        <section class="footfall " style="background:url(./assets/footbg.jpg) no-repeat center center/cover; ">
+        <section class="footfall w-[100dvw] sm:w-full " style="background:url(./assets/footbg.jpg) no-repeat center center/cover; ">
             <div class="overlay w-[100%] h-[100%] bg-[rgba(49,194,234,0.8)]">
                 <div data-aos="fade-up" data-aos-once="true" class="inner-container content px-14 py-5 flex flex-wrap items-center lg:flex-nowrap justify-center sm:justify-between lg:justify-center ">
-                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
+                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-14 px-16">
                         <div class="foot-img rounded-full bg-white w-fit">
                             <img src="../assets/foot1.png" alt="" class="w-24">
                         </div>
                         <span class="text-3xl font-semibold text-white my-3">500+</span>
                         <span class="foot-name text-base text-white">Satisfied Students</span>
                     </div>
-                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
+                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-14 px-16">
                         <div class="foot-img rounded-full bg-white w-fit">
                             <img src="../assets/foot2.png" alt="" class="w-24">
                         </div>
                         <span class="text-3xl font-semibold text-white my-3">300+</span>
                         <span class="foot-name text-base text-white">Online Courses</span>
                     </div>
-                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
+                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-14 px-16">
                         <div class="foot-img rounded-full bg-white w-fit">
                             <img src="../assets/foot3.png" alt="" class="w-24">
                         </div>
                         <span class="text-3xl font-semibold text-white my-3">240+</span>
                         <span class="foot-name text-base text-white">Online Courses</span>
                     </div>
-                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-12 px-16">
+                    <div class="foot-1 flex flex-col justify-center items-center py-20 lg:px-[4.5rem] md:px-14 px-16">
                         <div class="foot-img rounded-full bg-white w-fit">
                             <img src="../assets/foot4.png" alt="" class="w-24">
                         </div>
@@ -675,8 +725,8 @@
             <div data-aos="fade-up" data-aos-once="true" class="inner-container flex flex-col items-center">
                 <span class="font-bold leading-normal text-3xl lg:text-5xl font-ss py-10 ">Our Latest Courses</span>
                 <!-- Course Filters  -->
-                <div class="filters">
-                    <ul class="flex flex-wrap">
+                <div class="filters overflow-x-scroll">
+                    <ul class="flex flex-wrap justify-center">
                         <li class="my-3"><a href=""
                                 class="no-underline py-2 px-4 lg:mx-4 mx-2 bg-[#f4fcfe] rounded-full hover:bg-[#30C2EC] hover:text-white transition-all duration-300">All</a>
                         </li>
@@ -1299,7 +1349,7 @@
                     </div>
                 </div>
                 <button
-                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-2 md:px-8 py-4 md:my-7 cursor-pointer font-semibold text-sm md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 px-8 py-4 md:my-7 cursor-pointer font-semibold text-sm md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 hover:translate-x-3">
                         <a href="CoursePage.html">
                             View More
                         </a>
@@ -1345,18 +1395,19 @@
         <section class="features relative">
             <!-- Bg Animation -->
             <div class="absolute filled-circle lg:block hidden w-10 h-10 bg-red-400 rounded-[50%] border-2 border-red-400 -z-[1] top-[17%] left-[6%] "></div>
-            <div class="absolute hollow-square w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
-            <div class="absolute filled-square w-6 h-6  bg-purple-400 -z-[1] top-[65%] left-[82%]"></div>
+            <div class="absolute hollow-square lg:block hidden w-10 h-10 bg-transparent border-2 border-red-400 -z-[1] top-[30%] left-[48%]"></div>
+            <div class="absolute filled-square lg:block hidden w-6 h-6  bg-purple-400 -z-[1] top-[65%] left-[82%]"></div>
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-5xl font-thin text-yellow-500 -z-[1] top-[87%] left-[5%]">+</div>
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-[#30c1ec] text-6xl -z-[1] top-[80%] left-[52%]">=</div>
             <div class="absolute hollow-circle lg:block hidden w-8 h-8 bg-transparent border-2 rounded-[50%] border-green-300 -z-[1] top-[58%] left-[61%]"></div>
             <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-[#30c1ec] border-2 border-[#30c1ec] rounded-[50%] -z-[1] top-[14%] left-[83%]"></div>
             <!-- <div class="absolute filled-circle lg:block hidden w-6 h-6 bg-red-400 border-2 rounded-[50%] border-red-400 -z-[1] top-[20%] left-[87%]"></div> -->
             <div class="absolute symbol lg:block hidden w-14 h-14 bg-transparent text-8xl font-thin text-yellow-300 -z-[1] top-[10%] left-[58%]">~</div>
-            <div data-aos="fade-up" data-aos-once="true" class="inner-container flex flex-wrap justify-center lg:justify-normal lg:flex-nowrap lg:my-5 my-5">
-                <span class="font-bold leading-snug text-2xl md:text-5xl font-ss  lg:hidden ">Which Features We Provide For You</span>
-                <div class="feat-video ml-5 mr-10 my-14 md:my-32">
-                    <div class="features-thumb relative py-16 px-[6.25rem] md:py-48 md:px-[22rem] flex justify-center overflow-hidden rounded-2xl"
+
+            <div data-aos="fade-up" data-aos-once="true" class="inner-container flex flex-wrap justify-center lg:justify-normal px-4 lg:flex-nowrap lg:my-5 my-5">
+                <span class="font-bold leading-snug text-3xl sm:text-5xl font-ss  lg:hidden ">Which Features We Provide For You</span>
+                <div class="feat-video lg:ml-5 lg:mr-10 my-8 md:my-14 lg:my-32">
+                    <div class="features-thumb relative py-24 px-36 sm:py-28 sm:px-48 md:py-48 md:px-[22rem] flex justify-center overflow-hidden rounded-2xl"
                         style="background: url(../assets/features.jpg) no-repeat center center/cover;">
                     </div>
                 </div>
@@ -1364,25 +1415,25 @@
                     <span class="font-bold leading-snug text-5xl font-ss py-10 hidden lg:block">Which Features We Provide
                         For You</span>
                     <div class="feat-cards flex flex-wrap justify-center md:justify-normal">
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:w-40 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
+                        <div class="feat-card bg-[#f4fcfe] w-36 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
                                 <img src="../assets/lesson-builder.png" alt="">
                             </div>
                             <span class="feat-name text-base font-bold ">Mock Test</span>
                         </div>
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:w-40 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
+                        <div class="feat-card bg-[#f4fcfe] w-36 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
                                 <img src="../assets/course.png" alt="payment">
                             </div>
                             <span class="feat-name text-base font-bold ">Courses</span>
                         </div>
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:w-40 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
+                        <div class="feat-card bg-[#f4fcfe] w-36 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
                                 <img src="../assets/payment.png" alt="enrollment">
                             </div>
                             <span class="feat-name text-base font-bold ">Payment</span>
                         </div>
-                        <div class="feat-card bg-[#f4fcfe] w-36 md:w-40 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
+                        <div class="feat-card bg-[#f4fcfe] w-36 lg:w-48 p-4 flex flex-col justify-center items-center m-4">
                             <div class="feat-img my-4">
                                 <img src="../assets/enrollment.png" alt="course">
                             </div>
@@ -1396,7 +1447,7 @@
         <section class="testimonials mx-14  hidden lg:block relative">
             
             <div data-aos="fade-up" data-aos-once="true" class="inner-container overflow-hidden flex ">
-                <div class="testimonials-content w-[60%] py-14 pr-20 bg-white">
+                <div class="testimonials-content w-[50%] py-14 pr-20 bg-white">
                     <span class="font-bold leading-tight text-5xl font-ss py-10">What Students Say About Our
                         Course</span>
                     <div class="slide-container swiper" style="width: 90%;">
@@ -1475,20 +1526,20 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="testimonials-img w-[40%] py-14 -z-[1] justify-center md:justify-center">
+                <div class="testimonials-img w-[50%] py-14 -z-[1] justify-center md:justify-center">
                     <img src="../assets/testimonials.png" alt="" class=" h-full">
                 </div>
                 
             </div>
         </section>
         <!-- Testimonials small -->
-        <section data-aos="fade-up" class="testimonials-small flex flex-col lg:hidden ">
+        <section data-aos="fade-up" data-aos-once="true" class="testimonials-small flex flex-col lg:hidden mx-4 ">
             <span class="font-bold leading-normal text-3xl md:text-5xl font-ss pt-10 ">What Students Say About Our
                 Course</span>
                 <div class="testimonials-img h-full py-14  -z-[1]">
                     <img src="../assets/testimonials.png" alt="" class=" h-full">
                 </div>
-                <div class="slide-container swiper px-10">
+                <div class="slide-container swiper px-4">
                     <div class="slide-content-testimonials">
                         <div class="card-wrapper swiper-wrapper">
                             <div class="card flex flex-col swiper-slide border shadow-sm hover:shadow-lg overflow-hidden transition-all duration-500">
