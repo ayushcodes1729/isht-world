@@ -80,8 +80,8 @@
         <div class="inner-section mx-4 sm:mx-14">
             <div class="course-content flex flex-wrap lg:flex-nowrap">
                 <div class="more-filers flex flex-col items-center sm:items-baseline lg:w-[30dvw] w-[100dvw] md:w-[45dvw]">
-                    <div class="fill-1 bg-white w-[90%] flex flex-col my-5 rounded-full shadow-sm">
-                        <div class="selectbox rounded-full p-6 w-auto bg-white flex items-center">
+                    <div class="fill-1 bg-white w-[90%] flex flex-col sm:mt-5 sm:mb-0 mt-5 mb-5 rounded-full shadow-sm">
+                        <div class="selectbox rounded-full p-3 sm:px-6 sm:py-3 w-auto bg-white flex items-center">
                             <select name="cars" id="cars" class="text-base bg-white m-0 text-[#30C2EC] outline-none w-full">
                                 <option value="" disabled selected>Sort By</option>
                                 <option value="Web Design">New Course</option>
@@ -91,7 +91,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="fil-1 bg-white w-[90%] flex flex-col my-10 rounded-lg shadow-sm">
+                    <div class="fil-1 bg-white w-[90%] hidden md:flex flex-col my-10 rounded-lg shadow-sm">
                         <span class="text-lg font-semibold p-5 border-b">Course Type</span>
                         <label class="px-5 py-2">
                             <input type="radio" name="radio"
@@ -109,7 +109,7 @@
                                 class="p-2 peer-checked:text-[#30C2EC] ">Premium Courses</span>
                         </label>
                     </div>
-                    <div class="fil-2 bg-white w-[90%] flex flex-col my-5 rounded-lg shadow-sm">
+                    <div class="fil-2 bg-white w-[90%] hidden md:flex flex-col my-5 rounded-lg shadow-sm">
                         <span class="text-lg font-semibold p-5 border-b">Categories</span>
                         <label class="px-5 py-2">
                             <input type="radio" name="radio-cat"
@@ -137,7 +137,7 @@
                                 class="p-2 peer-checked:text-[#30C2EC] ">Graphics Design</span>
                         </label>
                     </div>
-                    <div class="fil-3 bg-white w-[90%] flex flex-col my-5 rounded-lg shadow-sm">
+                    <div class="fil-3 bg-white w-[90%] hidden md:flex flex-col my-5 rounded-lg shadow-sm">
                         <span class="text-lg font-semibold p-5 border-b">Filter By Price</span>
                         <div class="price-slider px-3">
                             <div class="values text-[#275efe] font-medium">
@@ -163,12 +163,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="courses">
-                    <div class="search bg-white rounded-full w-full md:w-[90%] lg:w-full  lg:px-3 lg:py-3 p-2 flex items-center sm:my-5 shadow-sm">
+                <div class="courses flex flex-col items-center sm:items-baseline">
+                    <div class="search bg-white rounded-full w-[90%] lg:w-[95%]  lg:px-4  px-4 flex items-center  sm:my-5 shadow-sm">
                         <span class="material-symbols-outlined text-[#30C2EC] text-lg ">
                             search
                         </span>
-                        <input type="text" class=" p-3 text-base w-fit md:w-full outline-none" placeholder="Search Courses">
+                        <input type="text" class=" py-3 px-1 text-base w-fit md:w-full outline-none" placeholder="Search Courses">
                     </div>
                     <div class="course-cards flex flex-wrap md:w-[90dvw] lg:w-[70dvw]">
                         <div class="card flex flex-col border shadow-md hover:shadow-lg transition-all duration-500 bg-white rounded-3xl my-5 mx-2 sm:w-[60%] md:w-[42%] lg:w-[30%]">
@@ -676,7 +676,7 @@
             </div>
         </div>
     </section>
-    <section class="footer bg-[#f4fcfe] ">
+    <section class="footer bg-[#f4fcfe] border-t">
         <div class="inner-container">
             <div class="footer-content py-20 mx-14 flex flex-wrap lg:flex-wrap border-b">
                 <div class="logo-content lg:w-[30%] ">
