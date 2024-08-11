@@ -74,235 +74,382 @@
         </header>
 
     </section>
-    <!-- Heading -->
-    <section class="header" style="background: url(../assets/courses.jpg) no-repeat center center/cover;">
-        <div class="inner-section px-24 py-40 h-[100dvh] bg-[rgba(49,194,234,0.8)]">
-            <div class="head-content grid grid-cols-[65%_35%]">
-                <div class="details">
-                    <span class="course-category tracking-widest text-base text-yellow-300">Web Development</span>
-                    <p class="course-title text-6xl text-white leading-tight font-bold">Fullstack Web Development HTML,
-                        CSS and JS</p>
-                    <span class="students-enrolled text-gray-200 flex py-2">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M18 7.16C17.94 7.15 17.87 7.15 17.81 7.16C16.43 7.11 15.33 5.98 15.33 4.58C15.33 3.15 16.48 2 17.91 2C19.34 2 20.49 3.16 20.49 4.58C20.48 5.98 19.38 7.11 18 7.16Z"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M16.9699 14.44C18.3399 14.67 19.8499 14.43 20.9099 13.72C22.3199 12.78 22.3199 11.24 20.9099 10.3C19.8399 9.59004 18.3099 9.35003 16.9399 9.59003"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M12 14.63C11.94 14.62 11.87 14.62 11.81 14.63C10.43 14.58 9.32996 13.45 9.32996 12.05C9.32996 10.62 10.48 9.46997 11.91 9.46997C13.34 9.46997 14.49 10.63 14.49 12.05C14.48 13.45 13.38 14.59 12 14.63Z"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path
-                                    d="M9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2C16.32 20.26 16.32 18.72 14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78Z"
-                                    stroke="#55eeff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                            </g>
-                        </svg>
-                        <span class="px-3">0 Students Enrolled</span>
-                    </span>
-                    <span class="students-enrolled text-gray-200 flex py-2">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path
-                                    d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
-                                    stroke="#c3b0a1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="#c3b0a1"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </g>
-                        </svg>
-                        <span class="px-3">0 Students Enrolled</span>
-                    </span>
+    <!-- Laptop View  -->
+    <div class="laptop-view hidden lg:block">
+        <!-- Heading -->
+        <section class="header" style="background: url(../assets/courses.jpg) no-repeat center center/cover;">
+            <div class="inner-section px-24 py-40 h-[100dvh] bg-[rgba(49,194,234,0.8)]">
+                <div class="head-content grid grid-cols-[65%_35%]">
+                    <div class="details">
+                        <span class="course-category tracking-widest text-base text-yellow-300">Web Development</span>
+                        <p class="course-title text-6xl text-white leading-tight font-bold">Fullstack Web Development
+                            HTML,
+                            CSS and JS</p>
+                        <span class="students-enrolled text-gray-200 flex py-2">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M18 7.16C17.94 7.15 17.87 7.15 17.81 7.16C16.43 7.11 15.33 5.98 15.33 4.58C15.33 3.15 16.48 2 17.91 2C19.34 2 20.49 3.16 20.49 4.58C20.48 5.98 19.38 7.11 18 7.16Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M16.9699 14.44C18.3399 14.67 19.8499 14.43 20.9099 13.72C22.3199 12.78 22.3199 11.24 20.9099 10.3C19.8399 9.59004 18.3099 9.35003 16.9399 9.59003"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M12 14.63C11.94 14.62 11.87 14.62 11.81 14.63C10.43 14.58 9.32996 13.45 9.32996 12.05C9.32996 10.62 10.48 9.46997 11.91 9.46997C13.34 9.46997 14.49 10.63 14.49 12.05C14.48 13.45 13.38 14.59 12 14.63Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2C16.32 20.26 16.32 18.72 14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span class="px-3">0 Students Enrolled</span>
+                        </span>
+                        <span class="students-enrolled text-gray-200 flex py-2">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                                        stroke="#c3b0a1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                                        stroke="#c3b0a1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <span class="px-3">0 Students Enrolled</span>
+                        </span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Course Details -->
-    <section class="details bg-[#f7fcff] relative p-20 grid grid-cols-[60%_35%]">
-        <div class="details-box bg-white">
-            <div class="navigators">
-                <ul class="flex flex-wrap justify-center gap-4 text-orange-600 ">
-                    <li class="flex items-center p-3 text-lg cursor-pointer border-b-2 border-[#ed6206]">
-                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path d="M4 6H20M4 12H20M4 18H20" stroke="#ed6206" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </g>
-                        </svg>
-                        <a href="Description.html" class="p-1 font-semibold">Description</a>
-                    </li>
-                    <li class="flex items-center p-3 text-lg cursor-pointer">
-                        <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
-                            fill="#6dc6e0">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <defs>
-                                    <style>
-                                        .a {
-                                            fill: none;
-                                            stroke: #6dc6e0;
-                                            stroke-linecap: round;
-                                            stroke-linejoin: round;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="a"
-                                    d="M40.7869,5.6761h-33a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2v-33A2,2,0,0,0,40.7869,5.6761ZM39.2728,15.9685v-5a2,2,0,0,0-2-2h-7">
-                                </path>
-                                <path class="a" d="M32.8109,24.2,17.84,32.8429V15.5561Z"></path>
-                                <path class="a" d="M8.9994,36.7056v2.0857a.8343.8343,0,0,0,.8343.8343h2.92"></path>
-                            </g>
-                        </svg>
-                        <a href="RecordedLecture.html"
-                            class="p-1 text-[#6dc6e0] font-semibold">Recorded&nbsp;Lectures</a>
-                    </li>
-                    <li class="flex items-center p-3 text-lg cursor-pointer">
-                        <svg fill="#6dc6e0" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-                            viewBox="0 0 30.88 30.88" xml:space="preserve" stroke="#6dc6e0" stroke-width="0.00030875">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g>
+        </section>
+        <!-- Course Details -->
+        <section class="details bg-[#f7fcff] relative p-20 grid grid-cols-[60%_35%] justify-between">
+            <div class="details-box bg-white">
+                <div class="navigators">
+                    <ul class="flex justify-center gap-4 text-orange-600 overflow-auto">
+                        <li class="flex items-center p-3 text-lg cursor-pointer border-b-2 border-[#ed6206]">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#ed6206" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <a href="Description.html" class="p-1 font-semibold">Description</a>
+                        </li>
+                        <li class="flex items-center p-3 text-lg cursor-pointer">
+                            <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                                fill="#6dc6e0">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs>
+                                        <style>
+                                            .a {
+                                                fill: none;
+                                                stroke: #6dc6e0;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="a"
+                                        d="M40.7869,5.6761h-33a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2v-33A2,2,0,0,0,40.7869,5.6761ZM39.2728,15.9685v-5a2,2,0,0,0-2-2h-7">
+                                    </path>
+                                    <path class="a" d="M32.8109,24.2,17.84,32.8429V15.5561Z"></path>
+                                    <path class="a" d="M8.9994,36.7056v2.0857a.8343.8343,0,0,0,.8343.8343h2.92"></path>
+                                </g>
+                            </svg>
+                            <a href="RecordedLecture.html"
+                                class="p-1 text-[#6dc6e0] font-semibold">Recorded&nbsp;Videos</a>
+                        </li>
+                        <li class="flex items-center p-3 text-lg cursor-pointer">
+                            <svg fill="#6dc6e0" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                viewBox="0 0 30.88 30.88" xml:space="preserve" stroke="#6dc6e0"
+                                stroke-width="0.00030875">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
                                     <g>
-                                        <path
-                                            d="M8.066,1.529v15.271h22.809V1.529H8.066z M29.891,15.818H9.05V2.512h20.841V15.818z">
-                                        </path>
-                                        <rect x="25.309" y="13.716" width="3.955" height="1.418"></rect>
-                                        <circle cx="3.068" cy="8.45" r="1.698"></circle>
-                                        <polygon
-                                            points="2.112,18.705 2.117,18.816 2.867,18.816 2.867,18.115 2.867,18.04 2.867,15.016 3.295,15.016 3.295,18.04 3.295,18.115 3.295,18.816 4.045,18.816 4.053,18.705 4.729,18.816 5.308,18.816 5.308,18.188 4.627,18.04 4.51,18.04 4.51,15.016 4.51,14.731 4.51,14.345 4.619,14.345 4.775,11.285 7.809,10.28 7.547,9.487 4.777,10.403 3.688,10.403 3.038,11.154 2.412,10.403 1.036,10.646 0.949,13.712 1.532,13.712 1.563,14.345 1.653,14.345 1.653,14.731 1.653,15.016 1.653,18.04 1.535,18.04 0.854,18.188 0.854,18.816 1.435,18.816 ">
-                                        </polygon>
-                                        <circle cx="23.449" cy="21.523" r="1.03"></circle>
-                                        <circle cx="28.175" cy="21.523" r="1.03"></circle>
-                                        <circle cx="18.216" cy="21.523" r="1.029"></circle>
-                                        <circle cx="12.633" cy="21.523" r="1.029"></circle>
-                                        <circle cx="7.245" cy="21.425" r="1.029"></circle>
-                                        <circle cx="1.882" cy="21.425" r="1.029"></circle>
-                                        <circle cx="23.447" cy="24.742" r="1.482"></circle>
-                                        <polygon
-                                            points="24.02,26.447 23.475,27.104 22.908,26.447 21.602,26.696 21.602,29.303 25.296,29.303 25.238,26.717 ">
-                                        </polygon>
-                                        <circle cx="18.076" cy="24.742" r="1.482"></circle>
-                                        <polygon
-                                            points="18.648,26.447 18.104,27.104 17.538,26.447 16.229,26.717 16.229,29.303 19.926,29.303 19.852,26.717 ">
-                                        </polygon>
-                                        <circle cx="20.688" cy="22.676" r="1.084"></circle>
-                                        <path
-                                            d="M22.038,26.012l-0.001-0.066c-0.191-0.365-0.326-0.761-0.326-1.203c0-0.29,0.077-0.561,0.167-0.82h-0.106h-0.267h-0.399 l-0.399,0.479l-0.412-0.479h-0.425h-0.237c0.11,0.252,0.173,0.529,0.173,0.82c0,0.477-0.168,0.913-0.441,1.27H22.038 L22.038,26.012z">
-                                        </path>
-                                        <circle cx="12.632" cy="24.742" r="1.48"></circle>
-                                        <polygon
-                                            points="13.204,26.447 12.659,27.104 12.094,26.447 10.784,26.717 10.784,29.303 14.481,29.303 14.406,26.717 ">
-                                        </polygon>
-                                        <circle cx="15.242" cy="22.676" r="1.084"></circle>
-                                        <path
-                                            d="M16.594,26.012v-0.066c-0.193-0.365-0.328-0.761-0.328-1.203c0-0.29,0.078-0.561,0.168-0.82h-0.106h-0.265H15.66 l-0.399,0.479l-0.413-0.479h-0.424h-0.237c0.109,0.252,0.172,0.529,0.172,0.82c0,0.477-0.166,0.913-0.442,1.27H16.594 L16.594,26.012z">
-                                        </path>
-                                        <circle cx="28.882" cy="24.675" r="1.481"></circle>
-                                        <polygon
-                                            points="29.454,26.379 28.908,27.034 28.344,26.379 27.035,26.676 27.035,29.235 30.732,29.235 30.657,26.655 ">
-                                        </polygon>
-                                        <circle cx="26.048" cy="22.607" r="1.084"></circle>
-                                        <path
-                                            d="M27.4,25.945l-0.002-0.066c-0.192-0.365-0.328-0.762-0.328-1.203c0-0.291,0.078-0.561,0.166-0.821h-0.104h-0.266h-0.4 l-0.399,0.479l-0.412-0.479h-0.426h-0.235c0.108,0.253,0.172,0.53,0.172,0.821c0,0.477-0.166,0.914-0.44,1.271L27.4,25.945 L27.4,25.945z">
-                                        </path>
-                                        <circle cx="7.329" cy="24.784" r="1.481"></circle>
-                                        <polygon
-                                            points="7.902,26.488 7.354,27.145 6.79,26.488 5.481,26.717 5.481,29.346 9.178,29.346 9.102,26.717 ">
-                                        </polygon>
-                                        <circle cx="9.938" cy="22.717" r="1.084"></circle>
-                                        <path
-                                            d="M11.29,26.053l-0.001-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.079-0.561,0.167-0.822h-0.105h-0.266h-0.4 l-0.399,0.48l-0.414-0.48H9.12H8.883c0.108,0.254,0.172,0.53,0.172,0.821c0,0.476-0.167,0.913-0.442,1.269H11.29z">
-                                        </path>
-                                        <circle cx="1.884" cy="24.784" r="1.481"></circle>
-                                        <polygon
-                                            points="2.457,26.488 1.91,27.145 1.344,26.488 0,26.717 0.036,29.346 3.733,29.346 3.656,26.717 ">
-                                        </polygon>
-                                        <circle cx="4.495" cy="22.717" r="1.084"></circle>
-                                        <path
-                                            d="M5.847,26.053l-0.002-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.078-0.561,0.168-0.822H5.578H5.313h-0.4 l-0.399,0.48L4.1,23.963H3.676H3.439c0.108,0.254,0.172,0.531,0.172,0.822c0,0.477-0.169,0.913-0.443,1.27h2.679V26.053z">
-                                        </path>
-                                        <polygon
-                                            points="15.109,10.064 13.072,10.064 13.072,9.589 14.87,9.589 14.87,8.682 13.072,8.682 13.072,8.207 15.051,8.207 15.051,7.231 11.898,7.231 11.898,11.042 15.109,11.042 ">
-                                        </polygon>
-                                        <rect x="15.605" y="9.925" width="2.694" height="0.816"></rect>
-                                        <rect x="15.605" y="8.639" width="2.694" height="0.816"></rect>
-                                        <path
-                                            d="M19.891,9.542c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.145-0.138,0.281-0.138c0.077,0,0.139,0.013,0.186,0.04 c0.047,0.026,0.084,0.063,0.106,0.109c0.024,0.046,0.04,0.099,0.046,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.5 c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.146-0.138,0.279-0.138c0.08,0,0.143,0.013,0.188,0.04 c0.048,0.026,0.082,0.063,0.107,0.109c0.024,0.046,0.04,0.099,0.045,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.9 c0-0.11-0.016-0.222-0.047-0.333c-0.031-0.113-0.086-0.214-0.159-0.304c-0.076-0.091-0.175-0.164-0.294-0.219 c-0.122-0.056-0.271-0.083-0.448-0.083c-0.172,0-0.315,0.021-0.433,0.063c-0.117,0.043-0.213,0.09-0.282,0.142 c-0.072,0.052-0.125,0.101-0.16,0.146c-0.035,0.046-0.058,0.073-0.069,0.08c-0.062-0.139-0.166-0.245-0.31-0.32 c-0.144-0.074-0.288-0.112-0.438-0.112c-0.19,0-0.363,0.033-0.518,0.099c-0.152,0.067-0.283,0.18-0.389,0.339h-0.012V8.272h-1.02 v2.769h1.059V9.542L19.891,9.542z">
-                                        </path>
-                                        <path
-                                            d="M24.301,10.733c0.139,0.123,0.305,0.216,0.494,0.28s0.396,0.097,0.616,0.097c0.155,0,0.308-0.018,0.455-0.054 c0.149-0.035,0.284-0.088,0.411-0.16c0.127-0.071,0.238-0.162,0.334-0.272c0.096-0.11,0.171-0.24,0.225-0.389h-0.982 c-0.043,0.067-0.106,0.117-0.189,0.149c-0.084,0.032-0.169,0.048-0.255,0.048c-0.168,0-0.298-0.049-0.388-0.149 c-0.088-0.099-0.141-0.23-0.154-0.39h2.027c0-0.27-0.029-0.509-0.092-0.72c-0.061-0.209-0.154-0.386-0.281-0.531 c-0.129-0.144-0.293-0.253-0.492-0.328c-0.198-0.074-0.436-0.112-0.709-0.112c-0.221,0-0.42,0.038-0.6,0.115 c-0.18,0.076-0.334,0.181-0.462,0.314c-0.129,0.133-0.227,0.288-0.296,0.464c-0.07,0.176-0.104,0.365-0.104,0.568 c0,0.231,0.039,0.437,0.117,0.616S24.162,10.611,24.301,10.733z M25.042,9c0.089-0.081,0.214-0.12,0.374-0.12 c0.135,0,0.246,0.045,0.334,0.136c0.087,0.091,0.13,0.2,0.13,0.328h-1.008C24.896,9.195,24.954,9.079,25.042,9z">
-                                        </path>
-                                        <path
-                                            d="M28.561,8.334h-0.85V8.331c0.089-0.054,0.182-0.104,0.279-0.156c0.097-0.051,0.185-0.107,0.265-0.168 c0.081-0.062,0.147-0.134,0.2-0.217c0.052-0.083,0.078-0.184,0.078-0.304c0-0.099-0.02-0.186-0.057-0.26 c-0.035-0.074-0.09-0.136-0.156-0.184c-0.066-0.049-0.146-0.085-0.241-0.109s-0.198-0.036-0.312-0.036 c-0.127,0-0.24,0.018-0.341,0.054c-0.102,0.036-0.187,0.088-0.257,0.158c-0.07,0.069-0.122,0.154-0.156,0.254 c-0.035,0.101-0.048,0.215-0.039,0.344h0.504c-0.002-0.115,0.017-0.208,0.06-0.278c0.041-0.071,0.116-0.107,0.226-0.107 c0.062,0,0.115,0.017,0.159,0.05c0.044,0.033,0.067,0.092,0.067,0.178c0,0.034-0.012,0.065-0.027,0.092 c-0.018,0.026-0.038,0.05-0.062,0.072c-0.026,0.022-0.057,0.042-0.086,0.06c-0.028,0.018-0.056,0.034-0.078,0.048 c-0.06,0.036-0.119,0.073-0.184,0.109c-0.062,0.037-0.123,0.075-0.182,0.115c-0.059,0.041-0.113,0.084-0.164,0.13 c-0.051,0.049-0.096,0.099-0.137,0.153c-0.047,0.063-0.082,0.132-0.105,0.21c-0.023,0.077-0.033,0.161-0.027,0.252h1.623V8.334z">
-                                        </path>
+                                        <g>
+                                            <path
+                                                d="M8.066,1.529v15.271h22.809V1.529H8.066z M29.891,15.818H9.05V2.512h20.841V15.818z">
+                                            </path>
+                                            <rect x="25.309" y="13.716" width="3.955" height="1.418"></rect>
+                                            <circle cx="3.068" cy="8.45" r="1.698"></circle>
+                                            <polygon
+                                                points="2.112,18.705 2.117,18.816 2.867,18.816 2.867,18.115 2.867,18.04 2.867,15.016 3.295,15.016 3.295,18.04 3.295,18.115 3.295,18.816 4.045,18.816 4.053,18.705 4.729,18.816 5.308,18.816 5.308,18.188 4.627,18.04 4.51,18.04 4.51,15.016 4.51,14.731 4.51,14.345 4.619,14.345 4.775,11.285 7.809,10.28 7.547,9.487 4.777,10.403 3.688,10.403 3.038,11.154 2.412,10.403 1.036,10.646 0.949,13.712 1.532,13.712 1.563,14.345 1.653,14.345 1.653,14.731 1.653,15.016 1.653,18.04 1.535,18.04 0.854,18.188 0.854,18.816 1.435,18.816 ">
+                                            </polygon>
+                                            <circle cx="23.449" cy="21.523" r="1.03"></circle>
+                                            <circle cx="28.175" cy="21.523" r="1.03"></circle>
+                                            <circle cx="18.216" cy="21.523" r="1.029"></circle>
+                                            <circle cx="12.633" cy="21.523" r="1.029"></circle>
+                                            <circle cx="7.245" cy="21.425" r="1.029"></circle>
+                                            <circle cx="1.882" cy="21.425" r="1.029"></circle>
+                                            <circle cx="23.447" cy="24.742" r="1.482"></circle>
+                                            <polygon
+                                                points="24.02,26.447 23.475,27.104 22.908,26.447 21.602,26.696 21.602,29.303 25.296,29.303 25.238,26.717 ">
+                                            </polygon>
+                                            <circle cx="18.076" cy="24.742" r="1.482"></circle>
+                                            <polygon
+                                                points="18.648,26.447 18.104,27.104 17.538,26.447 16.229,26.717 16.229,29.303 19.926,29.303 19.852,26.717 ">
+                                            </polygon>
+                                            <circle cx="20.688" cy="22.676" r="1.084"></circle>
+                                            <path
+                                                d="M22.038,26.012l-0.001-0.066c-0.191-0.365-0.326-0.761-0.326-1.203c0-0.29,0.077-0.561,0.167-0.82h-0.106h-0.267h-0.399 l-0.399,0.479l-0.412-0.479h-0.425h-0.237c0.11,0.252,0.173,0.529,0.173,0.82c0,0.477-0.168,0.913-0.441,1.27H22.038 L22.038,26.012z">
+                                            </path>
+                                            <circle cx="12.632" cy="24.742" r="1.48"></circle>
+                                            <polygon
+                                                points="13.204,26.447 12.659,27.104 12.094,26.447 10.784,26.717 10.784,29.303 14.481,29.303 14.406,26.717 ">
+                                            </polygon>
+                                            <circle cx="15.242" cy="22.676" r="1.084"></circle>
+                                            <path
+                                                d="M16.594,26.012v-0.066c-0.193-0.365-0.328-0.761-0.328-1.203c0-0.29,0.078-0.561,0.168-0.82h-0.106h-0.265H15.66 l-0.399,0.479l-0.413-0.479h-0.424h-0.237c0.109,0.252,0.172,0.529,0.172,0.82c0,0.477-0.166,0.913-0.442,1.27H16.594 L16.594,26.012z">
+                                            </path>
+                                            <circle cx="28.882" cy="24.675" r="1.481"></circle>
+                                            <polygon
+                                                points="29.454,26.379 28.908,27.034 28.344,26.379 27.035,26.676 27.035,29.235 30.732,29.235 30.657,26.655 ">
+                                            </polygon>
+                                            <circle cx="26.048" cy="22.607" r="1.084"></circle>
+                                            <path
+                                                d="M27.4,25.945l-0.002-0.066c-0.192-0.365-0.328-0.762-0.328-1.203c0-0.291,0.078-0.561,0.166-0.821h-0.104h-0.266h-0.4 l-0.399,0.479l-0.412-0.479h-0.426h-0.235c0.108,0.253,0.172,0.53,0.172,0.821c0,0.477-0.166,0.914-0.44,1.271L27.4,25.945 L27.4,25.945z">
+                                            </path>
+                                            <circle cx="7.329" cy="24.784" r="1.481"></circle>
+                                            <polygon
+                                                points="7.902,26.488 7.354,27.145 6.79,26.488 5.481,26.717 5.481,29.346 9.178,29.346 9.102,26.717 ">
+                                            </polygon>
+                                            <circle cx="9.938" cy="22.717" r="1.084"></circle>
+                                            <path
+                                                d="M11.29,26.053l-0.001-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.079-0.561,0.167-0.822h-0.105h-0.266h-0.4 l-0.399,0.48l-0.414-0.48H9.12H8.883c0.108,0.254,0.172,0.53,0.172,0.821c0,0.476-0.167,0.913-0.442,1.269H11.29z">
+                                            </path>
+                                            <circle cx="1.884" cy="24.784" r="1.481"></circle>
+                                            <polygon
+                                                points="2.457,26.488 1.91,27.145 1.344,26.488 0,26.717 0.036,29.346 3.733,29.346 3.656,26.717 ">
+                                            </polygon>
+                                            <circle cx="4.495" cy="22.717" r="1.084"></circle>
+                                            <path
+                                                d="M5.847,26.053l-0.002-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.078-0.561,0.168-0.822H5.578H5.313h-0.4 l-0.399,0.48L4.1,23.963H3.676H3.439c0.108,0.254,0.172,0.531,0.172,0.822c0,0.477-0.169,0.913-0.443,1.27h2.679V26.053z">
+                                            </path>
+                                            <polygon
+                                                points="15.109,10.064 13.072,10.064 13.072,9.589 14.87,9.589 14.87,8.682 13.072,8.682 13.072,8.207 15.051,8.207 15.051,7.231 11.898,7.231 11.898,11.042 15.109,11.042 ">
+                                            </polygon>
+                                            <rect x="15.605" y="9.925" width="2.694" height="0.816"></rect>
+                                            <rect x="15.605" y="8.639" width="2.694" height="0.816"></rect>
+                                            <path
+                                                d="M19.891,9.542c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.145-0.138,0.281-0.138c0.077,0,0.139,0.013,0.186,0.04 c0.047,0.026,0.084,0.063,0.106,0.109c0.024,0.046,0.04,0.099,0.046,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.5 c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.146-0.138,0.279-0.138c0.08,0,0.143,0.013,0.188,0.04 c0.048,0.026,0.082,0.063,0.107,0.109c0.024,0.046,0.04,0.099,0.045,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.9 c0-0.11-0.016-0.222-0.047-0.333c-0.031-0.113-0.086-0.214-0.159-0.304c-0.076-0.091-0.175-0.164-0.294-0.219 c-0.122-0.056-0.271-0.083-0.448-0.083c-0.172,0-0.315,0.021-0.433,0.063c-0.117,0.043-0.213,0.09-0.282,0.142 c-0.072,0.052-0.125,0.101-0.16,0.146c-0.035,0.046-0.058,0.073-0.069,0.08c-0.062-0.139-0.166-0.245-0.31-0.32 c-0.144-0.074-0.288-0.112-0.438-0.112c-0.19,0-0.363,0.033-0.518,0.099c-0.152,0.067-0.283,0.18-0.389,0.339h-0.012V8.272h-1.02 v2.769h1.059V9.542L19.891,9.542z">
+                                            </path>
+                                            <path
+                                                d="M24.301,10.733c0.139,0.123,0.305,0.216,0.494,0.28s0.396,0.097,0.616,0.097c0.155,0,0.308-0.018,0.455-0.054 c0.149-0.035,0.284-0.088,0.411-0.16c0.127-0.071,0.238-0.162,0.334-0.272c0.096-0.11,0.171-0.24,0.225-0.389h-0.982 c-0.043,0.067-0.106,0.117-0.189,0.149c-0.084,0.032-0.169,0.048-0.255,0.048c-0.168,0-0.298-0.049-0.388-0.149 c-0.088-0.099-0.141-0.23-0.154-0.39h2.027c0-0.27-0.029-0.509-0.092-0.72c-0.061-0.209-0.154-0.386-0.281-0.531 c-0.129-0.144-0.293-0.253-0.492-0.328c-0.198-0.074-0.436-0.112-0.709-0.112c-0.221,0-0.42,0.038-0.6,0.115 c-0.18,0.076-0.334,0.181-0.462,0.314c-0.129,0.133-0.227,0.288-0.296,0.464c-0.07,0.176-0.104,0.365-0.104,0.568 c0,0.231,0.039,0.437,0.117,0.616S24.162,10.611,24.301,10.733z M25.042,9c0.089-0.081,0.214-0.12,0.374-0.12 c0.135,0,0.246,0.045,0.334,0.136c0.087,0.091,0.13,0.2,0.13,0.328h-1.008C24.896,9.195,24.954,9.079,25.042,9z">
+                                            </path>
+                                            <path
+                                                d="M28.561,8.334h-0.85V8.331c0.089-0.054,0.182-0.104,0.279-0.156c0.097-0.051,0.185-0.107,0.265-0.168 c0.081-0.062,0.147-0.134,0.2-0.217c0.052-0.083,0.078-0.184,0.078-0.304c0-0.099-0.02-0.186-0.057-0.26 c-0.035-0.074-0.09-0.136-0.156-0.184c-0.066-0.049-0.146-0.085-0.241-0.109s-0.198-0.036-0.312-0.036 c-0.127,0-0.24,0.018-0.341,0.054c-0.102,0.036-0.187,0.088-0.257,0.158c-0.07,0.069-0.122,0.154-0.156,0.254 c-0.035,0.101-0.048,0.215-0.039,0.344h0.504c-0.002-0.115,0.017-0.208,0.06-0.278c0.041-0.071,0.116-0.107,0.226-0.107 c0.062,0,0.115,0.017,0.159,0.05c0.044,0.033,0.067,0.092,0.067,0.178c0,0.034-0.012,0.065-0.027,0.092 c-0.018,0.026-0.038,0.05-0.062,0.072c-0.026,0.022-0.057,0.042-0.086,0.06c-0.028,0.018-0.056,0.034-0.078,0.048 c-0.06,0.036-0.119,0.073-0.184,0.109c-0.062,0.037-0.123,0.075-0.182,0.115c-0.059,0.041-0.113,0.084-0.164,0.13 c-0.051,0.049-0.096,0.099-0.137,0.153c-0.047,0.063-0.082,0.132-0.105,0.21c-0.023,0.077-0.033,0.161-0.027,0.252h1.623V8.334z">
+                                            </path>
+                                        </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
-                        <a href="LiveLecture.html" class="p-1 text-[#6dc6e0] font-semibold">Live&nbsp;Lectures</a>
-                    </li>
-                    <li class="flex items-center p-3 text-lg cursor-pointer">
-                        <svg fill="#6dc6e0" height="24px" width="24px" version="1.1" id="XMLID_195_"
-                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            viewBox="0 0 24 24" xml:space="preserve">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <g id="notes">
-                                    <g>
-                                        <path
-                                            d="M16.4,24H2V0h20v18.4L16.4,24z M4,22h10v-6h6V2H4v2h16v2H4V22z M16,18v3.6l3.6-3.6H16z M11,18H6v-2h5V18z M18,14H6v-2h12 V14z M16,10H6V8h10V10z">
-                                        </path>
+                            </svg>
+                            <a href="LiveLecture.html" class="p-1 text-[#6dc6e0] font-semibold">Live&nbsp;Videos</a>
+                        </li>
+                        <li class="flex items-center p-3 text-lg cursor-pointer">
+                            <svg fill="#6dc6e0" height="24px" width="24px" version="1.1" id="XMLID_195_"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 24 24" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="notes">
+                                        <g>
+                                            <path
+                                                d="M16.4,24H2V0h20v18.4L16.4,24z M4,22h10v-6h6V2H4v2h16v2H4V22z M16,18v3.6l3.6-3.6H16z M11,18H6v-2h5V18z M18,14H6v-2h12 V14z M16,10H6V8h10V10z">
+                                            </path>
+                                        </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
-                        <a href="Notes.html" class="p-1 text-[#6dc6e0] font-semibold">Notes</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="title-content">
-                <div class="description p-4 text-base font-medium">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga distinctio aspernatur.
-                    Commodi deserunt animi libero at blanditiis expedita consequuntur fugit. Deleniti modi velit in amet
-                    ducimus ullam tempore dolores doloremque animi quibusdam illum, eos quisquam excepturi, ea eaque
-                    explicabo harum ab fuga necessitatibus esse? Tempore praesentium possimus, temporibus sed nihil ea
-                    unde rem quia consectetur aspernatur tenetur suscipit optio neque dolores, ratione fugit.
-                    Exercitationem, reiciendis unde voluptatibus voluptatem eaque tenetur qui culpa eos voluptate
-                    voluptates commodi labore nemo, dolorum libero assumenda sint facilis. Possimus corrupti esse ullam!
-                    Quo vero, nihil sed voluptatum laborum illo dignissimos dolore. Blanditiis, est placeat.
+                            </svg>
+                            <a href="Notes.html" class="p-1 text-[#6dc6e0] font-semibold">Notes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-content">
+                    <div class="description p-4 text-base font-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga distinctio aspernatur.
+                        Commodi deserunt animi libero at blanditiis expedita consequuntur fugit. Deleniti modi velit in
+                        amet
+                        ducimus ullam tempore dolores doloremque animi quibusdam illum, eos quisquam excepturi, ea eaque
+                        explicabo harum ab fuga necessitatibus esse? Tempore praesentium possimus, temporibus sed nihil
+                        ea
+                        unde rem quia consectetur aspernatur tenetur suscipit optio neque dolores, ratione fugit.
+                        Exercitationem, reiciendis unde voluptatibus voluptatem eaque tenetur qui culpa eos voluptate
+                        voluptates commodi labore nemo, dolorum libero assumenda sint facilis. Possimus corrupti esse
+                        ullam!
+                        Quo vero, nihil sed voluptatum laborum illo dignissimos dolore. Blanditiis, est placeat.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="right-0 translate-y-[-50%]">
-            <!-- Course Card -->
+            <div class="right-0 translate-y-[-50%]">
+                <!-- Course Card -->
+                <div
+                    class="bg-white border-white border-8 shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden  sm:w-[60%] md:w-[42%] lg:w-[80%] flex flex-col">
+                    <div class="transition-all">
+                        <div class=" overflow-hidden  w-full">
+                            <img src="../assets/course-image.jpg" alt=""
+                                class="card-img bg-cover w-full h-full object-cover transition-transform duration-300">
+                        </div>
+                        <div class="price p-3">
+                            <span class="text-3xl font-bold text-orange-600">
+                                $84.00
+                            </span>
+                            <span class="line-through">$99.00</span>
+                        </div>
+                        <div class="course-offerings p-3">
+                            <p class="text-lg font-semibold">This course includes:</p>
+                            <ul>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                                <li
+                                    class="relative my-2 pl-5 before:absolute before:left-0 before:top-0 before:text-green-500 before:content-['✔']">
+                                    This course includes something
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buy">
+                            <button
+                                class="flex items-center  bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 w-full justify-center py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base md:tracking-widest rounded-sm hover:bg-[#000000] duration-300 hover:gap-2 md:hover:translate-x-3">
+                                <a href="CoursePage.html">
+                                    Buy Now
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Phone View -->
+    <div class="phone-view block lg:hidden">
+        <!-- Heading -->
+        <section class="header" style="background: url(../assets/courses.jpg) no-repeat center center/cover;">
+            <div class="inner-section lg:px-24 px-4 pt-20 pb-10 lg:py-40 lg:h-[100dvh] bg-[rgba(49,194,234,0.8)]">
+                <div class="head-content lg:grid lg:grid-cols-[65%_35%]">
+                    <div class="details">
+                        <span class="course-category tracking-widest text-base text-yellow-300">Web Development</span>
+                        <p class="course-title text-3xl lg:text-6xl text-white leading-tight font-bold">Fullstack Web
+                            Development HTML,
+                            CSS and JS</p>
+                        <span class="students-enrolled text-gray-200 flex py-2">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M18 7.16C17.94 7.15 17.87 7.15 17.81 7.16C16.43 7.11 15.33 5.98 15.33 4.58C15.33 3.15 16.48 2 17.91 2C19.34 2 20.49 3.16 20.49 4.58C20.48 5.98 19.38 7.11 18 7.16Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M16.9699 14.44C18.3399 14.67 19.8499 14.43 20.9099 13.72C22.3199 12.78 22.3199 11.24 20.9099 10.3C19.8399 9.59004 18.3099 9.35003 16.9399 9.59003"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M5.96998 7.16C6.02998 7.15 6.09998 7.15 6.15998 7.16C7.53998 7.11 8.63998 5.98 8.63998 4.58C8.63998 3.15 7.48998 2 6.05998 2C4.62998 2 3.47998 3.16 3.47998 4.58C3.48998 5.98 4.58998 7.11 5.96998 7.16Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M6.99994 14.44C5.62994 14.67 4.11994 14.43 3.05994 13.72C1.64994 12.78 1.64994 11.24 3.05994 10.3C4.12994 9.59004 5.65994 9.35003 7.02994 9.59003"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M12 14.63C11.94 14.62 11.87 14.62 11.81 14.63C10.43 14.58 9.32996 13.45 9.32996 12.05C9.32996 10.62 10.48 9.46997 11.91 9.46997C13.34 9.46997 14.49 10.63 14.49 12.05C14.48 13.45 13.38 14.59 12 14.63Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path
+                                        d="M9.08997 17.78C7.67997 18.72 7.67997 20.26 9.08997 21.2C10.69 22.27 13.31 22.27 14.91 21.2C16.32 20.26 16.32 18.72 14.91 17.78C13.32 16.72 10.69 16.72 9.08997 17.78Z"
+                                        stroke="#55eeff" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span class="px-3">0 Students Enrolled</span>
+                        </span>
+                        <span class="students-enrolled text-gray-200 flex py-2">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                                        stroke="#c3b0a1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                                        stroke="#c3b0a1" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <span class="px-3">0 Students Enrolled</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Course Details -->
+        <section class="details bg-[#f7fcff] lg:relative lg:p-20  justify-between">
+            <!-- Small Cards -->
             <div
-                class="bg-white border-white border-8 shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden  sm:w-[60%] md:w-[42%] lg:w-[80%] flex flex-col">
+                class=" bg-white border-white border-8 shadow-md hover:shadow-lg transition-all duration-500 overflow-hidden my-10 mx-5 sm:w-[94%] ">
                 <div class="transition-all">
                     <div class=" overflow-hidden  w-full">
                         <img src="../assets/course-image.jpg" alt=""
@@ -313,14 +460,6 @@
                             $84.00
                         </span>
                         <span class="line-through">$99.00</span>
-                    </div>
-                    <div class="buy px-3">
-                        <button
-                            class="flex items-center  bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 w-full justify-center py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base md:tracking-widest rounded-full hover:bg-[#000000] duration-300 hover:gap-2 md:hover:translate-x-3">
-                            <a href="CoursePage.html">
-                                Buy Now
-                            </a>
-                        </button>
                     </div>
                     <div class="course-offerings p-3">
                         <p class="text-lg font-semibold">This course includes:</p>
@@ -351,11 +490,188 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="buy">
+                        <button
+                            class="flex items-center  bg-[#30c2ec] text-white gap-1 md:px-4 md:py-4 w-full justify-center py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base md:tracking-widest rounded-sm hover:bg-[#000000] duration-300 hover:gap-2 md:hover:translate-x-3">
+                            <a href="CoursePage.html">
+                                Buy Now
+                            </a>
+                        </button>
+                    </div>
                 </div>
 
             </div>
-        </div>
-    </section>
+            <div class="details-box bg-white my-10 mx-5">
+                <div class="navigators">
+                    <ul
+                        class="flex flex-wrap md:flex-nowrap justify-between md:justify-center gap-1 md:gap-4 text-orange-600 lg:overflow-auto">
+                        <li class="flex items-center p-1 md:p-3 text-lg cursor-pointer border-b-2 border-[#ed6206]">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#ed6206" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </g>
+                            </svg>
+                            <a href="Description.html" class="md:p-1 font-semibold text-sm lg:text-base">Description</a>
+                        </li>
+                        <li class="flex items-center p-1 md:p-3 text-lg cursor-pointer">
+                            <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"
+                                fill="#6dc6e0">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <defs>
+                                        <style>
+                                            .a {
+                                                fill: none;
+                                                stroke: #6dc6e0;
+                                                stroke-linecap: round;
+                                                stroke-linejoin: round;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="a"
+                                        d="M40.7869,5.6761h-33a2,2,0,0,0-2,2v33a2,2,0,0,0,2,2h33a2,2,0,0,0,2-2v-33A2,2,0,0,0,40.7869,5.6761ZM39.2728,15.9685v-5a2,2,0,0,0-2-2h-7">
+                                    </path>
+                                    <path class="a" d="M32.8109,24.2,17.84,32.8429V15.5561Z"></path>
+                                    <path class="a" d="M8.9994,36.7056v2.0857a.8343.8343,0,0,0,.8343.8343h2.92"></path>
+                                </g>
+                            </svg>
+                            <a href="RecordedLecture.html"
+                                class="lg:p-1 text-[#6dc6e0] font-semibold text-sm lg:text-base">Recorded&nbsp;Videos</a>
+                        </li>
+                        <li class="flex items-center p-1 md:p-3 text-lg cursor-pointer">
+                            <svg fill="#6dc6e0" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                viewBox="0 0 30.88 30.88" xml:space="preserve" stroke="#6dc6e0"
+                                stroke-width="0.00030875">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M8.066,1.529v15.271h22.809V1.529H8.066z M29.891,15.818H9.05V2.512h20.841V15.818z">
+                                            </path>
+                                            <rect x="25.309" y="13.716" width="3.955" height="1.418"></rect>
+                                            <circle cx="3.068" cy="8.45" r="1.698"></circle>
+                                            <polygon
+                                                points="2.112,18.705 2.117,18.816 2.867,18.816 2.867,18.115 2.867,18.04 2.867,15.016 3.295,15.016 3.295,18.04 3.295,18.115 3.295,18.816 4.045,18.816 4.053,18.705 4.729,18.816 5.308,18.816 5.308,18.188 4.627,18.04 4.51,18.04 4.51,15.016 4.51,14.731 4.51,14.345 4.619,14.345 4.775,11.285 7.809,10.28 7.547,9.487 4.777,10.403 3.688,10.403 3.038,11.154 2.412,10.403 1.036,10.646 0.949,13.712 1.532,13.712 1.563,14.345 1.653,14.345 1.653,14.731 1.653,15.016 1.653,18.04 1.535,18.04 0.854,18.188 0.854,18.816 1.435,18.816 ">
+                                            </polygon>
+                                            <circle cx="23.449" cy="21.523" r="1.03"></circle>
+                                            <circle cx="28.175" cy="21.523" r="1.03"></circle>
+                                            <circle cx="18.216" cy="21.523" r="1.029"></circle>
+                                            <circle cx="12.633" cy="21.523" r="1.029"></circle>
+                                            <circle cx="7.245" cy="21.425" r="1.029"></circle>
+                                            <circle cx="1.882" cy="21.425" r="1.029"></circle>
+                                            <circle cx="23.447" cy="24.742" r="1.482"></circle>
+                                            <polygon
+                                                points="24.02,26.447 23.475,27.104 22.908,26.447 21.602,26.696 21.602,29.303 25.296,29.303 25.238,26.717 ">
+                                            </polygon>
+                                            <circle cx="18.076" cy="24.742" r="1.482"></circle>
+                                            <polygon
+                                                points="18.648,26.447 18.104,27.104 17.538,26.447 16.229,26.717 16.229,29.303 19.926,29.303 19.852,26.717 ">
+                                            </polygon>
+                                            <circle cx="20.688" cy="22.676" r="1.084"></circle>
+                                            <path
+                                                d="M22.038,26.012l-0.001-0.066c-0.191-0.365-0.326-0.761-0.326-1.203c0-0.29,0.077-0.561,0.167-0.82h-0.106h-0.267h-0.399 l-0.399,0.479l-0.412-0.479h-0.425h-0.237c0.11,0.252,0.173,0.529,0.173,0.82c0,0.477-0.168,0.913-0.441,1.27H22.038 L22.038,26.012z">
+                                            </path>
+                                            <circle cx="12.632" cy="24.742" r="1.48"></circle>
+                                            <polygon
+                                                points="13.204,26.447 12.659,27.104 12.094,26.447 10.784,26.717 10.784,29.303 14.481,29.303 14.406,26.717 ">
+                                            </polygon>
+                                            <circle cx="15.242" cy="22.676" r="1.084"></circle>
+                                            <path
+                                                d="M16.594,26.012v-0.066c-0.193-0.365-0.328-0.761-0.328-1.203c0-0.29,0.078-0.561,0.168-0.82h-0.106h-0.265H15.66 l-0.399,0.479l-0.413-0.479h-0.424h-0.237c0.109,0.252,0.172,0.529,0.172,0.82c0,0.477-0.166,0.913-0.442,1.27H16.594 L16.594,26.012z">
+                                            </path>
+                                            <circle cx="28.882" cy="24.675" r="1.481"></circle>
+                                            <polygon
+                                                points="29.454,26.379 28.908,27.034 28.344,26.379 27.035,26.676 27.035,29.235 30.732,29.235 30.657,26.655 ">
+                                            </polygon>
+                                            <circle cx="26.048" cy="22.607" r="1.084"></circle>
+                                            <path
+                                                d="M27.4,25.945l-0.002-0.066c-0.192-0.365-0.328-0.762-0.328-1.203c0-0.291,0.078-0.561,0.166-0.821h-0.104h-0.266h-0.4 l-0.399,0.479l-0.412-0.479h-0.426h-0.235c0.108,0.253,0.172,0.53,0.172,0.821c0,0.477-0.166,0.914-0.44,1.271L27.4,25.945 L27.4,25.945z">
+                                            </path>
+                                            <circle cx="7.329" cy="24.784" r="1.481"></circle>
+                                            <polygon
+                                                points="7.902,26.488 7.354,27.145 6.79,26.488 5.481,26.717 5.481,29.346 9.178,29.346 9.102,26.717 ">
+                                            </polygon>
+                                            <circle cx="9.938" cy="22.717" r="1.084"></circle>
+                                            <path
+                                                d="M11.29,26.053l-0.001-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.079-0.561,0.167-0.822h-0.105h-0.266h-0.4 l-0.399,0.48l-0.414-0.48H9.12H8.883c0.108,0.254,0.172,0.53,0.172,0.821c0,0.476-0.167,0.913-0.442,1.269H11.29z">
+                                            </path>
+                                            <circle cx="1.884" cy="24.784" r="1.481"></circle>
+                                            <polygon
+                                                points="2.457,26.488 1.91,27.145 1.344,26.488 0,26.717 0.036,29.346 3.733,29.346 3.656,26.717 ">
+                                            </polygon>
+                                            <circle cx="4.495" cy="22.717" r="1.084"></circle>
+                                            <path
+                                                d="M5.847,26.053l-0.002-0.066c-0.192-0.365-0.327-0.762-0.327-1.201c0-0.292,0.078-0.561,0.168-0.822H5.578H5.313h-0.4 l-0.399,0.48L4.1,23.963H3.676H3.439c0.108,0.254,0.172,0.531,0.172,0.822c0,0.477-0.169,0.913-0.443,1.27h2.679V26.053z">
+                                            </path>
+                                            <polygon
+                                                points="15.109,10.064 13.072,10.064 13.072,9.589 14.87,9.589 14.87,8.682 13.072,8.682 13.072,8.207 15.051,8.207 15.051,7.231 11.898,7.231 11.898,11.042 15.109,11.042 ">
+                                            </polygon>
+                                            <rect x="15.605" y="9.925" width="2.694" height="0.816"></rect>
+                                            <rect x="15.605" y="8.639" width="2.694" height="0.816"></rect>
+                                            <path
+                                                d="M19.891,9.542c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.145-0.138,0.281-0.138c0.077,0,0.139,0.013,0.186,0.04 c0.047,0.026,0.084,0.063,0.106,0.109c0.024,0.046,0.04,0.099,0.046,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.5 c0-0.146,0.024-0.266,0.076-0.358c0.053-0.092,0.146-0.138,0.279-0.138c0.08,0,0.143,0.013,0.188,0.04 c0.048,0.026,0.082,0.063,0.107,0.109c0.024,0.046,0.04,0.099,0.045,0.16c0.006,0.061,0.008,0.123,0.008,0.187v1.5h1.057v-1.9 c0-0.11-0.016-0.222-0.047-0.333c-0.031-0.113-0.086-0.214-0.159-0.304c-0.076-0.091-0.175-0.164-0.294-0.219 c-0.122-0.056-0.271-0.083-0.448-0.083c-0.172,0-0.315,0.021-0.433,0.063c-0.117,0.043-0.213,0.09-0.282,0.142 c-0.072,0.052-0.125,0.101-0.16,0.146c-0.035,0.046-0.058,0.073-0.069,0.08c-0.062-0.139-0.166-0.245-0.31-0.32 c-0.144-0.074-0.288-0.112-0.438-0.112c-0.19,0-0.363,0.033-0.518,0.099c-0.152,0.067-0.283,0.18-0.389,0.339h-0.012V8.272h-1.02 v2.769h1.059V9.542L19.891,9.542z">
+                                            </path>
+                                            <path
+                                                d="M24.301,10.733c0.139,0.123,0.305,0.216,0.494,0.28s0.396,0.097,0.616,0.097c0.155,0,0.308-0.018,0.455-0.054 c0.149-0.035,0.284-0.088,0.411-0.16c0.127-0.071,0.238-0.162,0.334-0.272c0.096-0.11,0.171-0.24,0.225-0.389h-0.982 c-0.043,0.067-0.106,0.117-0.189,0.149c-0.084,0.032-0.169,0.048-0.255,0.048c-0.168,0-0.298-0.049-0.388-0.149 c-0.088-0.099-0.141-0.23-0.154-0.39h2.027c0-0.27-0.029-0.509-0.092-0.72c-0.061-0.209-0.154-0.386-0.281-0.531 c-0.129-0.144-0.293-0.253-0.492-0.328c-0.198-0.074-0.436-0.112-0.709-0.112c-0.221,0-0.42,0.038-0.6,0.115 c-0.18,0.076-0.334,0.181-0.462,0.314c-0.129,0.133-0.227,0.288-0.296,0.464c-0.07,0.176-0.104,0.365-0.104,0.568 c0,0.231,0.039,0.437,0.117,0.616S24.162,10.611,24.301,10.733z M25.042,9c0.089-0.081,0.214-0.12,0.374-0.12 c0.135,0,0.246,0.045,0.334,0.136c0.087,0.091,0.13,0.2,0.13,0.328h-1.008C24.896,9.195,24.954,9.079,25.042,9z">
+                                            </path>
+                                            <path
+                                                d="M28.561,8.334h-0.85V8.331c0.089-0.054,0.182-0.104,0.279-0.156c0.097-0.051,0.185-0.107,0.265-0.168 c0.081-0.062,0.147-0.134,0.2-0.217c0.052-0.083,0.078-0.184,0.078-0.304c0-0.099-0.02-0.186-0.057-0.26 c-0.035-0.074-0.09-0.136-0.156-0.184c-0.066-0.049-0.146-0.085-0.241-0.109s-0.198-0.036-0.312-0.036 c-0.127,0-0.24,0.018-0.341,0.054c-0.102,0.036-0.187,0.088-0.257,0.158c-0.07,0.069-0.122,0.154-0.156,0.254 c-0.035,0.101-0.048,0.215-0.039,0.344h0.504c-0.002-0.115,0.017-0.208,0.06-0.278c0.041-0.071,0.116-0.107,0.226-0.107 c0.062,0,0.115,0.017,0.159,0.05c0.044,0.033,0.067,0.092,0.067,0.178c0,0.034-0.012,0.065-0.027,0.092 c-0.018,0.026-0.038,0.05-0.062,0.072c-0.026,0.022-0.057,0.042-0.086,0.06c-0.028,0.018-0.056,0.034-0.078,0.048 c-0.06,0.036-0.119,0.073-0.184,0.109c-0.062,0.037-0.123,0.075-0.182,0.115c-0.059,0.041-0.113,0.084-0.164,0.13 c-0.051,0.049-0.096,0.099-0.137,0.153c-0.047,0.063-0.082,0.132-0.105,0.21c-0.023,0.077-0.033,0.161-0.027,0.252h1.623V8.334z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="LiveLecture.html"
+                                class="lg:p-1 text-[#6dc6e0] font-semibold text-sm lg:text-base">Live&nbsp;Videos</a>
+                        </li>
+                        <li class="flex items-center p-1 md:p-3 text-lg cursor-pointer">
+                            <svg fill="#6dc6e0" height="24px" width="24px" version="1.1" id="XMLID_195_"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 24 24" xml:space="preserve">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g id="notes">
+                                        <g>
+                                            <path
+                                                d="M16.4,24H2V0h20v18.4L16.4,24z M4,22h10v-6h6V2H4v2h16v2H4V22z M16,18v3.6l3.6-3.6H16z M11,18H6v-2h5V18z M18,14H6v-2h12 V14z M16,10H6V8h10V10z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <a href="Notes.html"
+                                class="lg:p-1 text-[#6dc6e0] font-semibold text-sm lg:text-base">Notes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-content">
+                    <div class="description p-4 text-base font-medium">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fuga distinctio aspernatur.
+                        Commodi deserunt animi libero at blanditiis expedita consequuntur fugit. Deleniti modi velit in
+                        amet
+                        ducimus ullam tempore dolores doloremque animi quibusdam illum, eos quisquam excepturi, ea eaque
+                        explicabo harum ab fuga necessitatibus esse? Tempore praesentium possimus, temporibus sed nihil
+                        ea
+                        unde rem quia consectetur aspernatur tenetur suscipit optio neque dolores, ratione fugit.
+                        Exercitationem, reiciendis unde voluptatibus voluptatem eaque tenetur qui culpa eos voluptate
+                        voluptates commodi labore nemo, dolorum libero assumenda sint facilis. Possimus corrupti esse
+                        ullam!
+                        Quo vero, nihil sed voluptatum laborum illo dignissimos dolore. Blanditiis, est placeat.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <!-- Footer  -->
     <section class="footer bg-[#f4fcfe] border-t">
         <div data-aos="fade-up" data-aos-once="true" class="inner-container">
