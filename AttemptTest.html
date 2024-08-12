@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+
+<body>
+    <!-- Test Heading -->
+    <section class="heading w-full bg-[#f4fcfe] text-center p-10 text-3xl lg:text-5xl font-semibold">JPG to Text Converter</section>
+    <!-- Test Area -->
+    <section class="test-area grid grid-rows-[1fr_auto] lg:grid-cols-[25%_70%]">
+        <div class="questions-container flex flex-col items-center bg-[#f4fcfe] p-5">
+            <div class="test-image my-2">
+                <img src="./assets/exam.png" class="w-48" alt="">
+            </div>
+            <div class="questions flex flex-col items-center">
+                <span class="text-lg text-center font-semibold">Questions</span>
+                <ul class="flex flex-wrap gap-6 my-2">
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        1</li>
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        2</li>
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        3</li>
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        4</li>
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        5</li>
+                    <li
+                        class="list-none bg-rose-500 text-white h-10 p-3 flex items-center justify-center aspect-square rounded-[50%]">
+                        6</li>
+                </ul>
+                <div class="submit-buttons py-6 flex justify-between gap-8">
+                    <button
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base rounded-md hover:bg-[#000000] duration-300">
+                        <a href="AttemptTest.html">
+                            Cancel Test
+                        </a>
+                    </button>
+                    <button
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base rounded-md hover:bg-[#000000] duration-300">
+                        <a href="AttemptTest.html">
+                            Submit
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="current-question p-4">
+            <div class="bg-gray-50 rounded-lg shadow-lg px-8 py-6">
+                <div class="flex flex-col gap-4 items-center justify-between">
+                    <h3 class="text-2xl font-bold text-gray-700">Time Left</h3>
+                    <span id="countdown" class="text-2xl font-semibold text-gray-700"></span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-400">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+            <div class="quest my-8">
+                <span>Q.1) In Excel, which function is used to sum a range of cells? Excel में, किस फ़ंक्शन का उपयोग sum
+                    करने के लिए किया जाता है?</span>
+                <div class="options flex flex-col my-4">
+                    <div class="options">
+                        <input type="radio" name="opt" id="opt-1">
+                        <label for="opt-1">=SUM</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="opt" id="opt-1">
+                        <label for="opt-1">=SUM</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="opt" id="opt-1">
+                        <label for="opt-1">=SUM</label>
+                    </div>
+                    <div class="options">
+                        <input type="radio" name="opt" id="opt-1">
+                        <label for="opt-1">=SUM</label>
+                    </div>
+                </div>
+                <div class="submit-buttons my-5 flex justify-between gap-8">
+                    <button
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base rounded-md hover:bg-[#000000] duration-300">
+                        <a href="AttemptTest.html">
+                            Prev
+                        </a>
+                    </button>
+                    <button
+                        class="flex items-center  bg-[#30c2ec] text-white gap-1 py-2 px-4 md:my-0 my-2 cursor-pointer md:font-semibold md:text-base rounded-md hover:bg-[#000000] duration-300">
+                        <a href="AttemptTest.html">
+                            Next
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2029 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="countdown" 
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +
+            "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 500);
+</script>
+
+</html>
