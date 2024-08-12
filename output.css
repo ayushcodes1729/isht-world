@@ -1286,6 +1286,22 @@ video {
   gap: 2.5rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1723,6 +1739,11 @@ video {
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-0 {
@@ -2509,6 +2530,14 @@ video {
     gap: 4vw;
   }
 
+  .md\:gap-56 {
+    gap: 14rem;
+  }
+
+  .md\:gap-64 {
+    gap: 16rem;
+  }
+
   .md\:p-1 {
     padding: 0.25rem;
   }
@@ -2822,6 +2851,10 @@ video {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-32 {
+    gap: 8rem;
   }
 
   .lg\:overflow-auto {
